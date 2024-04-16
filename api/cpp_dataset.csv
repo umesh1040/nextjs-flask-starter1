@@ -1,0 +1,4050 @@
+Question,Answer
+What is C++? What are the advantages of C++?,"C++ is an object-oriented programming language that was introduced to overcome the jurisdictions where C was lacking. By object-oriented we mean that it works with the concept of polymorphism, inheritance, abstraction, encapsulation, object, and class.
+
+Advantages of C++:
+
+C++ is an OOPs language that means the data is considered as objects.
+C++ is a multi-paradigm language; In simple terms, it means that we can program the logic, structure, and procedure of the program.
+Memory management is a key feature in C++ as it enables dynamic memory allocation
+It is a Mid-Level programming language which means it can develop games, desktop applications, drivers, and kernels"
+What are the different data types present in C++?,"In C++, there are five basic data types: int, float, char, bool, and double. Integers, floating-point numbers, characters, Boolean values, & double-precision floating-point numbers are each represented by one of these data types."
+Define �std�?,�std� is also known as Standard or it can be interpreted as a namespace. The command �using namespace std� informs the compiler to add everything under the std namespace and inculcate them in the global namespace. This all inculcation of global namespace benefits us to use �cout� and �cin� without using �std::_operator_�.
+What are references in C++?,"When a variable is described as a reference it becomes an alias of the already existing variable. In simple terms, a referenced variable is another named variable of an existing variable keeping in mind that changes made in the reference variable will be reflected in the already existing variable. A reference variable is preceded with a �&� symbol."
+What do you mean by Call by Value and Call by Reference?,"The changes made in the function are never reflected outside the function on the variable. In short, the original value is never altered in Call by Value.   The changes made in the functions can be seen outside the function on the passed function. In short, the original value is altered in Call by reference."
+Define token in C++,"A token is the smallest individual element of a program that is understood by a compiler. A token comprises the following:
+
+Keywords � That contain a special meaning to the compiler
+Identifiers � That hold a unique value/identity 
+Constants � That never change their value throughout the program 
+Strings � That contains the homogenous sequence of data 
+Special Symbols � They have some special meaning and cannot be used for another purpose; eg: [] () {}, ; * = # 
+Operators � Who perform operations on the operand"
+What are classes and objects in C++?,"A class is a user-defined data type where all the member functions and data members are tailor-made according to demands and requirements in addition to which these all can be accessed with the help of an object. To declare a user-defined data type we use a keyword class.
+
+An object is an instance of a class and an entity with value and state; In simple terms, it is used as a catalyst or to represent a class member. It may contain different parameters or none."
+What is Function Overriding?,"When a function of the same name, same arguments or parameters, and same return type already present/declared in the base class is used in a derived class is known as Function Overriding. It is an example of Runtime Polymorphism or Late Binding which means the overridden function will be executed at the run time of the execution."
+What are the various OOPs concepts in C++?,"Classes: It is a user-defined datatype
+Objects: It is an instance of a class
+Abstraction: It is a technique of showing only necessary details
+Encapsulation: Wrapping of data in a single unit
+Inheritance: The capability of a class to derive properties and characteristics from another class
+Polymorphism: Polymorphism is known as many forms of the same thing"
+Explain inheritance,"The capability or ability of a class to derive properties and characteristics from another class is known as inheritance. In simple terms, it is a system or technique of reusing and extending existing classes without modifying them."
+When should we use multiple inheritance?,"Multiple inheritances mean that a derived class can inherit two or more base/parent classes. It is useful when a derived class needs to combine numerous attributes/contracts and inherit some, or all, of the implementation from these attributes/contracts. To take a real-life example consider your Parents where Parent A is your DAD Parent B is your MOM and Chid C is you."
+What is virtual inheritance?,"Virtual inheritance is a technique that ensures only one copy of a base class�s member variables is inherited by grandchild-derived classes. Or in simple terms, virtual inheritance is used when we are dealing with a situation of multiple inheritances but want to prevent multiple instances of the same class from appearing in the inheritance hierarchy."
+What is polymorphism in C++?,"Polymorphism is known as many forms of the same thing. In simple terms, we can say that Polymorphism is the ability to display a member function in multiple forms depending on the type of object that calls them. 
+
+In other words, we can also say that a man can be an employee to someone, a son of someone, a father of someone, and a husband of someone; this is how polymorphism can be projected in real life.
+
+There is 2 type of polymorphism:
+Compile Time Polymorphism
+1. Function Overloading
+2. Operator Overloading
+Run Time Polymorphism
+1. Function Overriding
+2. Virtual Function"
+ What are the different types of polymorphism in C++?,"Compile Time Polymorphism or Static Binding
+
+This type of polymorphism is achieved during the compile time of the program which results in it making a bit faster than Run time. Also, Inheritance is not involved in it. It is comprised of 2 further techniques:
+
+Function Overloading: When there are multiple functions with the same name but different parameters then this is known as function overloading.                                                          Operator Overloading: It is basically giving practice of giving a special meaning to the existing meaning of an operator or in simple terms redefining the pre-redefined meaning                                         Run-Time Polymorphism or Late Binding
+Run-time polymorphism takes place when functions are invoked during run time. 
+ 
+Function Overriding: Function overriding occurs when a base class member function is redefined in a derived class with the same arguments and return type.
+"
+Explain the constructor in C++.,"A constructor is a special type of member function of a class, whose name is the same as that of the class by whom it is invoked and initializes value to the object of a class. "
+What are destructors in C++?,"Destructors are members of functions in a class that delete an object when an object of the class goes out of scope. Destructors have the same name as the class preceded by a tilde (~) sign. Also, destructors follow a down-to-top approach, unlike constructors which follow a top-to-down."
+What is a virtual destructor?,"When destroying instances or objects of a derived class using a base class pointer object, a virtual destructor is invoked to free up memory space allocated by the derived class object or instance.
+
+Virtual destructor guarantees that first the derived class� destructor is called. Then the base class�s destructor is called to release the space occupied by both destructors in the inheritance class which saves us from the memory leak. It is advised to make your destructor virtual whenever your class is polymorphic."
+Is destructor overloading possible? If yes then explain and if no then why?,"The simple answer is NO we cannot overload a destructor. It is mandatory to only destructor per class in C++. Also to mention, Destructor neither take arguments nor they have a parameter that might help to overload."
+Which operations are permitted on pointers?,"Pointers are the variables that are used to store the address location of another variable. Operations that are permitted to a pointer are:
+
+Increment/Decrement of a Pointer
+Addition and Subtraction of integer to a pointer
+Comparison of pointers of the same type"
+What is the purpose of the �delete� operator?,"The delete operator is used to delete/remove all the characteristics/properties from an object by deallocating its memory; furthermore, it returns true or false in the end. In simple terms, it destroys or deallocates array and non-array(pointer) objects which are created by new expressions."
+What is an Overflow Error?,"Overflow Error occurs when the number is too large for the data type to handle. In simple terms, it is a type of error that is valid for the defined but exceeds used the defined range where it should coincide/lie. 
+
+For example, the range of int data type is �2,147,483,648 to 2,147,483,647 and if we declare a variable of size 2,247,483,648 it will generate a overflow error."
+What does the Scope Resolution operator do?,"A scope resolution operator is denoted by a �::� symbol. Just like its name this operator resolves the barrier of scope in a program. A scope resolution operator is used to reference a member function or a global variable out of their scope furthermore to which it can also access the concealed variable or function in a program.
+
+Scope Resolution is used for numerous amounts of tasks:
+
+To access a global variable when there is a local variable with the same name
+To define the function outside the class
+In case of multiple inheritances
+For namespace"
+What are the C++ access modifiers?,"The access restriction specified to the class members( whether it is member function or data member) is known as access modifiers/specifiers. 
+
+Access Modifiers are of 3 types:
+
+Private � It can neither be accessed nor be viewed from outside the class 
+Protected � It can be accessed if and only if the accessor is the derived class
+Public � It can be accessed or be viewed from outside the class "
+Can you compile a program without the main function?,"Yes, it is absolutely possible to compile a program without a main(). For example Use Macros that defines the main"
+What is STL?,"STL is known as Standard Template Library, it is a library that provides 4 components like container, algorithms, and iterators.
+ "
+Define inline function.,An inline function is a form of request not an order to a compiler which results in the inlining of our function to the main function body. An inline function can become overhead if the execution time of the function is less than the switching time from the caller function to called function. To make a function inline use the keyword inline before and define the function before any calls are made to the function.
+What is an abstract class and when do you use it?,"An abstract class is a class that is specifically designed to be used as a base class. An abstract class contains at least one pure virtual function. You declare a pure virtual function by using a pure specifier(= 0) in the declaration of a virtual member function in the class declaration
+
+You cannot use an abstract class as a parameter type, a function return type, or the type of an explicit conversion, nor can you declare an object of an abstract class. However, it can be used to declare pointers and references to an abstract class. 
+
+An abstract class is used if you want to provide a common, implemented functionality among all the implementations of the component. Abstract classes will allow you to partially implement your class, whereas interfaces would have no implementation for any members whatsoever. In simple words, Abstract Classes are a good fit if you want to provide implementation details to your children but don�t want to allow an instance of your class to be directly instantiated."
+What are the static data members and static member functions?,The static data member of a class is a normal data member but preceded with a static keyword. It executes before main() in a program and is initialized to 0 when the first object of the class is created. It is only visible to a defined class but its scope is of a lifetime.
+ What is the main use of the keyword �Volatile�?,"Just like its name, things can change suddenly and unexpectantly; So it is used to inform the compiler that the value may change anytime. Also, the volatile keyword prevents the compiler from performing optimization on the code. It was intended to be used when interfacing with memory-mapped hardware, signal handlers, and machine code instruction."
+Define storage class in C++ and name some,"Storage class is used to define the features(lifetime and visibility) of a variable or function. These features usually help in tracing the existence of a variable during the runtime of a program.
+"
+What is a mutable storage class specifier? How can they be used?,"Just like its name, the mutable storage class specifier is used only on a class data member to make it modifiable even though the member is part of an object declared as const. Static or const, or reference members cannot use the mutable specifier. When we declare a function as const, this pointer passed to the function becomes const."
+Define the Block scope variable. ,"So the scope of a variable is a region where a variable is accessible. There are two scope regions, A global and block or local. 
+
+A block scope variable is also known as a local scope variable. A variable that is defined inside a function (like main) or inside a block (like loops and if blocks) is a local variable. It can be used ONLY inside that particular function/block in which it is declared. a block-scoped variable will not be available outside the block even if the block is inside a function."
+What is the function of the keyword �Auto�?,"The auto keyword may be used to declare a variable with a complex type in a straightforward fashion. You can use auto to declare a variable if the initialization phrase contains templates, pointers to functions, references to members, etc. With type inference capabilities, we can spend less time having to write out things the compiler already knows. As all the types are deduced in the compiler phase only, the time for compilation increases slightly but it does not affect the runtime of the program. "
+Define namespace in C++.,"Namespaces enable us to organize named items that would otherwise have global scope into smaller scopes, allowing us to give them namespace scope. This permits program parts to be organized into distinct logical scopes with names. The namespace provides a place to define or declare identifiers such as variables, methods, and classes. 
+
+Or we could say that A namespace is a declarative zone that gives the identifiers (names of types, functions, variables, and so on) within it a scope. Namespaces are used to arrange code into logical categories and to avoid name clashes, which might happen when you have many libraries in your code base."
+When is void() return type used?,"The void keyword, when used as a function return type, indicates that the function does not return a value. When used as a parameter list for a function, void indicates that the function takes no parameters. Non-Value Returning functions are also known as void functions. They�re called �void� since they�re not designed to return anything. True, but only partially. We can�t return values from void functions, but we can certainly return something. Although void functions have no return type, they can return values."
+Can we call a virtual function from a constructor?,"Yes, we can call a virtual function from a constructor. But it can throw an exception of overriding."
+What are void pointers?,"Just like its name a void pointer is a pointer that is not associated with anything or with any data type. Nevertheless, a void pointer can hold the address value of any type and can be converted from one data type to another.
+"
+Write a C++ Program to Check Whether a Number is a Positive or Negative Number.,"// C++ Program to check whether a number is positive or 
+// negative 
+#include <iostream> 
+using namespace std; 
+
+int main() 
+{ 
+	int number; 
+	number = -100; 
+	if (number >= 0) { 
+		cout << number << "" is a positive number."" << endl; 
+	} 
+	else { 
+		cout << number << "" is a negative number."" << endl; 
+	} 
+	return 0; 
+}"
+Write a Program to Find the Greatest of the Three Numbers.,"// C++ program to find greatest 
+// among three numbers using 
+#include <iostream> 
+using namespace std; 
+
+int main() 
+{ 
+	int a = 10, b = 20, c = 30; 
+
+	cout << ""The Greatest Among Three Numbers is : ""; 
+
+	if (a >= b && a >= c) { 
+		cout << a << endl; 
+	} 
+	else if (b >= a && b >= c) { 
+		cout << b << endl; 
+	} 
+	else { 
+		cout << c << endl; 
+	} 
+
+	return 0; 
+}"
+C++ Program To Check Whether Number is Even Or Odd,"// C++ program to check 
+// for even or odd 
+#include <iostream> 
+using namespace std; 
+
+// Returns true if n is 
+// even, else odd 
+bool isEven(int n) { return (n % 2 == 0); } 
+
+// Driver code 
+int main() 
+{ 
+	int n = 247; 
+	if (isEven(n) == true) { 
+		cout << ""Even"" << endl; 
+	} 
+	else { 
+		cout << ""Odd""; 
+	} 
+
+	return 0; 
+}"
+Write a Program to Find the ASCII Value of a Character,"// C++ Program to find ASCII value of a character 
+#include <iostream> 
+using namespace std; 
+
+int main() 
+{ 
+	char ch; 
+
+	ch = 'A'; 
+
+	cout << ""The ASCII value of "" << ch << "" is "" << int(ch) 
+		<< endl; 
+
+	return 0; 
+}"
+Write a Program to Check Whether a Character is a Vowel or Consonant,"// C++ Program to print whether a character is vowel or not 
+#include <cctype> 
+#include <iostream> 
+using namespace std; 
+
+int main() 
+{ 
+	char ch = 'e'; 
+
+	if (isalpha(ch)) { 
+		if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o'
+			|| ch == 'u' || ch == 'A' || ch == 'E'
+			|| ch == 'I' || ch == 'O' || ch == 'U') { 
+			cout << ch << "" is a vowel."" << endl; 
+		} 
+		else { 
+			cout << ch << "" is a consonant."" << endl; 
+		} 
+	} 
+	else { 
+		cout << ch << "" is not an alphabet."" << endl; 
+	} 
+
+	return 0; 
+}"
+Write a Program to Print Check Whether a Character is an Alphabet or Not,"// C++ program to print whether a character is an alphabet 
+// or not 
+#include <cctype> 
+#include <iostream> 
+using namespace std; 
+
+int main() 
+{ 
+	char ch; 
+
+	ch = 'a'; 
+
+	if (isalpha(ch)) { 
+		cout << ch << "" is an alphabet."" << endl; 
+	} 
+	else { 
+		cout << ch << "" is not an alphabet."" << endl; 
+	} 
+
+	return 0; 
+}"
+Write a Program to Find the Length of the String Without using strlen() Function ,"// C++ Program to find the length of a string without using 
+// strlen() 
+#include <cstring> 
+#include <iostream> 
+using namespace std; 
+
+int main() 
+{ 
+	string str = ""GeeksforGeeks""; 
+	int length = 0; 
+
+	for (int i = 0; str[i] != '\0'; i++) { 
+		length++; 
+	} 
+
+	cout << ""The length of the string is: "" << length 
+		<< endl; 
+
+	return 0; 
+}"
+Write a Program to Toggle Each Character in a String ,"// C++ Program to toggle string 
+#include <cstring> 
+#include <iostream> 
+using namespace std; 
+
+int main() 
+{ 
+	string str = ""GeeksforGeeks""; 
+
+	for (int i = 0; str[i] != '\0'; i++) { 
+		if (islower(str[i])) { 
+			str[i] = toupper(str[i]); 
+		} 
+		else if (isupper(str[i])) { 
+			str[i] = tolower(str[i]); 
+		} 
+	} 
+
+	cout << ""Toggled string: "" << str << endl; 
+
+	return 0; 
+}"
+Write a Program to Count the Number of Vowels ,"// C++ Program to count the number of vowels 
+#include <cstring> 
+#include <iostream> 
+using namespace std; 
+
+int main() 
+{ 
+	string str = ""GeeksforGeeks to the moon""; 
+	int vowels = 0; 
+
+	for (int i = 0; str[i] != '\0'; i++) { 
+		if (str[i] == 'a' || str[i] == 'e' || str[i] == 'i'
+			|| str[i] == 'o' || str[i] == 'u'
+			|| str[i] == 'A' || str[i] == 'E'
+			|| str[i] == 'I' || str[i] == 'O'
+			|| str[i] == 'U') { 
+			vowels++; 
+		} 
+	} 
+
+	cout << ""Number of vowels in the string: "" << vowels 
+		<< endl; 
+
+	return 0; 
+}"
+ Write a Program to Remove the Vowels from a String,"// C++ Program to remove the vowels from a string 
+#include <cstring> 
+#include <iostream> 
+using namespace std; 
+
+int main() 
+{ 
+	int j = 0; 
+
+	string str = ""GeeksforGeeks""; 
+
+	for (int i = 0; str[i] != '\0'; i++) { 
+		if (str[i] != 'a' && str[i] != 'e' && str[i] != 'i'
+			&& str[i] != 'o' && str[i] != 'u'
+			&& str[i] != 'A' && str[i] != 'E'
+			&& str[i] != 'I' && str[i] != 'O'
+			&& str[i] != 'U') { 
+			str[j++] = str[i]; 
+		} 
+	} 
+	while (j < str.size()) { 
+
+		str[j] = '\0'; 
+
+		j++; 
+	} 
+	cout << ""String without vowels: "" << str << endl; 
+
+	return 0; 
+}"
+Write a Program to Remove All Characters From a String Except Alphabets,"// C++ Programto remove all characters from a string except 
+// alphabets 
+#include <cctype> 
+#include <iostream> 
+#include <string> 
+
+using namespace std; 
+
+string remove_non_alphabets(string str) 
+{ 
+	string result = """"; 
+	for (char c : str) { 
+		if (isalpha(c)) { 
+			result += c; 
+		} 
+	} 
+	return result; 
+} 
+
+int main() 
+{ 
+	string str = ""Gee$ksfor$geeks""; 
+
+	cout << ""Alphabets only: "" << remove_non_alphabets(str) 
+		<< endl; 
+
+	return 0; 
+}"
+Write a Program to Remove Spaces From a String,"// C++ Program to remove spaces from a string 
+#include <iostream> 
+#include <string> 
+
+using namespace std; 
+
+string remove_spaces(string str) 
+{ 
+	string result = """"; 
+	for (char c : str) { 
+		if (c != ' ') { 
+			result += c; 
+		} 
+	} 
+	return result; 
+} 
+
+int main() 
+{ 
+	string str = ""Gfg to the moon""; 
+
+	cout << ""Without spaces: "" << remove_spaces(str) 
+		<< endl; 
+
+	return 0; 
+}"
+Write a Program to Find the Sum of the First N Natural Numbers,"// C++ program to find 
+// Sum of first 
+// n natural numbers. 
+#include <iostream> 
+using namespace std; 
+
+// Function to find sum 
+int findSum(int n) 
+{ 
+	int sum = 0; 
+	for (int i = 1; i <= n; i++) 
+		sum = sum + i; 
+	return sum; 
+} 
+
+int main() 
+{ 
+	int n = 7; 
+	cout << findSum(n); 
+	return 0; 
+}"
+Write a Program to Find the Factorial of a Number Using Loops,"// C++ program to find factorial using loops 
+#include <bits/stdc++.h> 
+using namespace std; 
+
+// function to find factorial 
+int factorial(int n) 
+{ 
+	int fact = 1; 
+	while (n > 1) { 
+		fact *= n; 
+		n--; 
+	} 
+
+	return fact; 
+} 
+
+// driver code 
+int main() 
+{ 
+	int num = 5; 
+
+	cout << factorial(num); 
+
+	return 0; 
+}"
+Write a Program to Find a Leap Year or Not,"// C++ program to check if a given 
+// year is leap year or not 
+#include <iostream> 
+using namespace std; 
+
+bool checkYear(int year) 
+{ 
+	// leap year 
+	if (year % 400 == 0) 
+		return true; 
+
+	// Not leap year 
+	if (year % 100 == 0) 
+		return false; 
+
+	// leap year 
+	if (year % 4 == 0) 
+		return true; 
+
+	// Not leap year 
+	return false; 
+} 
+
+int main() 
+{ 
+	int year = 2000; 
+
+	if (checkYear(year)) 
+		cout << ""Leap Year""; 
+	else
+		cout << ""Not a Leap Year""; 
+	return 0; 
+}"
+Write a Program to Check the Prime Number,"// C++ program to check if a 
+// Number is prime 
+#include <iostream> 
+using namespace std; 
+
+bool isPrime(int n) 
+{ 
+	// base condition 
+	if (n <= 1) 
+		return false; 
+
+	// Check from 2 to n-1 
+	for (int i = 2; i < n; i++) 
+		if (n % i == 0) 
+			return false; 
+
+	return true; 
+} 
+
+int main() 
+{ 
+	isPrime(21) ? cout << "" true\n"" : cout << "" false\n""; 
+	isPrime(17) ? cout << "" true\n"" : cout << "" false\n""; 
+	return 0; 
+}"
+Write a Program to Check Palindrome,"// C++ program to check if a 
+// number is Palindrome or not 
+#include <iostream> 
+using namespace std; 
+
+// Function to check Palindrome 
+bool checkPalindrome(int n) 
+{ 
+	int ans = 0; 
+	int temp = n; 
+	while (temp != 0) { 
+		ans = (ans * 10) + (temp % 10); 
+		temp = temp / 10; 
+	} 
+
+	return (ans == n); 
+} 
+
+int main() 
+{ 
+	int n = 12321; 
+
+	if (checkPalindrome(n) == 1) { 
+		cout << ""Yes\n""; 
+	} 
+	else { 
+		cout << ""No\n""; 
+	} 
+
+	return 0; 
+}"
+Write a Program to Check Whether a Number is an Armstrong Number or Not,"// C++ Program to check 
+// if number is Armstrong 
+// or not 
+#include <iostream> 
+using namespace std; 
+
+int main() 
+{ 
+	int n = 153; 
+	int temp = n; 
+	int ans = 0; 
+
+	// function to calculate 
+	// the sum of individual digits 
+	while (n > 0) { 
+
+		int rem = n % 10; 
+		ans = (ans) + (rem * rem * rem); 
+		n = n / 10; 
+	} 
+
+	// condition to check 
+	if (temp == ans) { 
+		cout << (""Yes, it is Armstrong Number""); 
+	} 
+	else { 
+		cout << (""No, it is not an Armstrong Number""); 
+	} 
+	return 0; 
+}"
+Write a Program to Find the Nth Term of the Fibonacci Series,"// C++ Program to Find the 
+// Nth Term of the Fibonacci Series 
+#include <iostream> 
+using namespace std; 
+
+int fib(int n) 
+{ 
+	int first = 0, second = 1, ans; 
+	if (n == 0) 
+		return first; 
+
+	for (int i = 2; i <= n; i++) { 
+		ans = first + second; 
+		first = second; 
+		second = ans; 
+	} 
+
+	return ans; 
+} 
+
+int main() 
+{ 
+	int n = 13; 
+
+	cout << fib(n); 
+	return 0; 
+}"
+Write a Program to Calculate the Greatest Common Divisor of Two Numbers,"// C++ program to find 
+// GCD of two numbers 
+#include <iostream> 
+
+using namespace std; 
+
+// Function to return gcd of a and b 
+int gcd(int a, int b) 
+{ 
+	int result = min(a, b); 
+
+	while (result > 0) { 
+		if (a % result == 0 && b % result == 0) { 
+			break; 
+		} 
+		result--; 
+	} 
+
+	return result; 
+} 
+
+int main() 
+{ 
+	int a = 54, b = 33; 
+
+	cout << ""GCD: "" << gcd(a, b); 
+
+	return 0; 
+}"
+Write a Program to Calculate the Lowest Common Multiple (LCM) of Two Numbers,"// C++ program to 
+// Find LCM of two numbers 
+#include <iostream> 
+using namespace std; 
+
+long long gcd(long long int a, long long int b) 
+{ 
+	if (b == 0) 
+		return a; 
+	return gcd(b, a % b); 
+} 
+
+// Function to return LCM of two numbers 
+long long lcm(int a, int b) 
+{ 
+	long long result = (a / gcd(a, b)) * b; 
+	return result; 
+} 
+
+int main() 
+{ 
+	int a = 24, b = 13; 
+	cout << ""LCM : "" << lcm(a, b); 
+	return 0; 
+}"
+Write a Program for Finding the Roots of a Quadratic Equation,"// C++ program to find 
+// Roots of a quadratic equation 
+#include <iostream> 
+#include <math.h> 
+using namespace std; 
+
+// Prints roots of quadratic equation ax*2 + bx + c 
+void findRoots(int a, int b, int c) 
+{ 
+	// If a is 0, then equation is not quadratic 
+	if (a == 0) { 
+		cout << ""Invalid""; 
+		return; 
+	} 
+
+	// Formulae to calculate D 
+	int d = b * b - 4 * a * c; 
+
+	// Formulae to calculate 
+	// square root of D 
+	double sqrt_val = sqrt(abs(d)); 
+
+	// Conditons for checking root 
+	if (d > 0) { 
+		cout << ""Roots are real and different \n""; 
+		cout << (double)(-b + sqrt_val) / (2 * a) << ""\n""
+			<< (double)(-b - sqrt_val) / (2 * a); 
+	} 
+	else if (d == 0) { 
+		cout << ""Roots are real and same \n""; 
+		cout << -(double)b / (2 * a); 
+	} 
+	else { 
+		cout << ""Roots are complex \n""; 
+		cout << -(double)b / (2 * a) << "" + i""
+			<< sqrt_val / (2 * a) << ""\n""
+			<< -(double)b / (2 * a) << "" - i""
+			<< sqrt_val / (2 * a); 
+	} 
+} 
+
+int main() 
+{ 
+	int a = 1, b = 4, c = 4; 
+
+	findRoots(a, b, c); 
+
+	return 0; 
+}"
+Write a Program to Find the Smallest and Largest Element in an Array,"// C++ code to for 
+// Finding the minimum 
+// And maximum of the array 
+#include <iostream> 
+using namespace std; 
+
+// Function to find the minimum 
+// and maximum of the array 
+void findMinMax(int arr[], int n) 
+{ 
+	int mini = arr[0]; 
+	int maxi = arr[0]; 
+
+	for (int i = 0; i < n; i++) { 
+		if (arr[i] < mini) { 
+			mini = arr[i]; 
+		} 
+		else if (arr[i] > maxi) { 
+			maxi = arr[i]; 
+		} 
+	} 
+
+	cout << ""Min: "" << mini << endl; 
+	cout << ""Max: "" << maxi << endl; 
+} 
+
+int main() 
+{ 
+	int arr[] = { 1, 2, 3, 4, 5 }; 
+	int N = sizeof(arr) / sizeof(arr[0]); 
+
+	findMinMax(arr, N); 
+
+	return 0; 
+}"
+Write a Program to Find the Second Smallest Element in an Array,"// C++ program to find 
+// Second smallest elements 
+#include <climits> 
+#include <iostream> 
+using namespace std; 
+
+void print2Smallest(int arr[], int n) 
+{ 
+	int first, second; 
+
+	if (n < 2) { 
+		cout << "" Invalid Input ""; 
+		return; 
+	} 
+
+	first = second = INT_MAX; 
+	for (int i = 0; i < n; i++) { 
+		// If current element is smaller than first 
+		// Then update both first and second 
+		if (arr[i] < first) { 
+			second = first; 
+			first = arr[i]; 
+		} 
+
+		// If arr[i] is in between first and second 
+		// Then update second 
+		else if (arr[i] < second && arr[i] != first) 
+			second = arr[i]; 
+	} 
+	if (second == INT_MAX) 
+		cout << ""There is no second smallest element\n""; 
+	else
+		cout << "" Second smallest element is "" << second 
+			<< endl; 
+} 
+
+int main() 
+{ 
+	int arr[] = { 21, 3, 15, 41, 34, 10 }; 
+	int n = sizeof(arr) / sizeof(arr[0]); 
+
+	print2Smallest(arr, n); 
+
+	return 0; 
+}"
+Write a Program to Calculate the Sum of Elements in an Array,"// C++ Program to calculate 
+// sum of elements in an array 
+#include <iostream> 
+using namespace std; 
+
+int sum(int arr[], int n) 
+{ 
+	int sum = 0; 
+
+	for (int i = 0; i < n; i++) 
+		sum += arr[i]; 
+
+	return sum; 
+} 
+
+int main() 
+{ 
+	int arr[] = { 1, 23, 54, 12, 9 }; 
+	int n = sizeof(arr) / sizeof(arr[0]); 
+
+	cout << ""Sum: "" << sum(arr, n); 
+
+	return 0; 
+}"
+Write a Program to Check if the Given String is Palindrome or Not,"// C++ program for checking 
+// if it is Palindrome or not 
+#include <iostream> 
+using namespace std; 
+
+string isPalindrome(string S) 
+{ 
+	for (int i = 0; i < S.length() / 2; i++) { 
+		if (S[i] != S[S.length() - i - 1]) { 
+			return ""No""; 
+		} 
+	} 
+
+	return ""Yes""; 
+} 
+
+int main() 
+{ 
+	string S = ""GeekeeG""; 
+
+	cout << isPalindrome(S); 
+
+	return 0; 
+}"
+Write a Program to Check if Two Strings are Anagram or Not,"// C++ program to check if two strings 
+// Are anagrams of each other 
+#include <iostream> 
+using namespace std; 
+
+#define NO_OF_CHARS 256 
+
+bool areAnagram(char* str1, char* str2) 
+{ 
+	// Create 2 count arrays and initialize all values as 0 
+	int count1[NO_OF_CHARS] = { 0 }; 
+	int count2[NO_OF_CHARS] = { 0 }; 
+	int i; 
+
+	// For each character in input strings, increment count 
+	// in the corresponding count array 
+	for (i = 0; str1[i] && str2[i]; i++) { 
+		count1[str1[i]]++; 
+		count2[str2[i]]++; 
+	} 
+
+	if (str1[i] || str2[i]) 
+		return false; 
+
+	// Compare count arrays 
+	for (i = 0; i < NO_OF_CHARS; i++) 
+		if (count1[i] != count2[i]) 
+			return false; 
+
+	return true; 
+} 
+
+int main() 
+{ 
+	char str1[] = ""Geek""; 
+	char str2[] = ""for""; 
+
+	if (areAnagram(str1, str2)) 
+		cout << ""The two strings are anagram of each other""; 
+	else
+		cout << ""The two strings are not anagram of each ""
+				""other""; 
+
+	return 0; 
+}"
+Write a Program to Print a Diamond Pattern,"// C++ program to print 
+// Diamond shape 
+#include <iostream> 
+using namespace std; 
+
+void printDiamond(int n) 
+{ 
+	int space = n - 1; 
+
+	for (int i = 0; i < n; i++) { 
+		for (int j = 0; j < space; j++) 
+			cout << "" ""; 
+
+		// Print i+1 stars 
+		for (int j = 0; j <= i; j++) 
+			cout << ""* ""; 
+
+		cout << endl; 
+		space--; 
+	} 
+
+	space = 0; 
+
+	// run loop (parent loop) 
+	for (int i = n; i > 0; i--) { 
+		for (int j = 0; j < space; j++) 
+			cout << "" ""; 
+
+		// Print i stars 
+		for (int j = 0; j < i; j++) 
+			cout << ""* ""; 
+
+		cout << endl; 
+		space++; 
+	} 
+} 
+
+int main() 
+{ 
+	printDiamond(5); 
+	return 0; 
+}"
+Write a Program to Print a Pyramid Pattern,"// C++ Program to 
+// Print Pyramid pattern 
+#include <iostream> 
+using namespace std; 
+
+void pattern(int n) 
+{ 
+	int k = 2 * n - 2; 
+
+	for (int i = 0; i < n; i++) { 
+
+		for (int j = 0; j < k; j++) 
+			cout << "" ""; 
+
+		k = k - 1; 
+		for (int j = 0; j <= i; j++) { 
+			// Printing stars 
+			cout << ""* ""; 
+		} 
+		cout << endl; 
+	} 
+} 
+
+int main() 
+{ 
+	int n = 5; 
+
+	pattern(n); 
+	return 0; 
+}"
+Write a Program to Print the Hourglass Pattern,"// C Program to print hourglass pattern 
+#include <iostream> 
+using namespace std; 
+
+// function to print hourglass pattern 
+void hourglass(int rows) 
+{ 
+
+	// first outer loop to iterate each row 
+	for (int i = 0; i < 2 * rows - 1; i++) { 
+
+		// assigning comparator 
+		int comp; 
+		if (i < rows) { 
+			comp = 2 * i + 1; 
+		} 
+		else { 
+			comp = 2 * (2 * rows - i) - 3; 
+		} 
+
+		// first inner loop to print leading spaces 
+		for (int j = 0; j < comp; j++) { 
+			cout << ' '; 
+		} 
+
+		// second inner loop to print star * 
+		for (int k = 0; k < 2 * rows - comp; k++) { 
+			cout << ""* ""; 
+		} 
+		cout << '\n'; 
+	} 
+} 
+
+int main() 
+{ 
+	hourglass(5); 
+	return 0; 
+}"
+Write a Program to Print the Rotated Hourglass Pattern,"// C++ Program to print 
+// star pattern given 
+#include <iostream> 
+using namespace std; 
+
+void pattern(int n) 
+{ 
+	for (int i = 0; i <= n; i++) { 
+		for (int j = 0; j <= i; j++) { 
+			cout << ""* ""; 
+		} 
+
+		int spaces = 2 * (n - i); 
+		for (int j = 0; j < spaces; j++) { 
+			cout << "" ""; 
+		} 
+
+		for (int j = 0; j <= i; j++) { 
+			cout << ""* ""; 
+		} 
+
+		cout << endl; 
+	} 
+
+	// Printing bottom part. 
+	for (int i = n - 1; i >= 0; i--) { 
+
+		for (int j = 0; j <= i; j++) { 
+			cout << ""* ""; 
+		} 
+
+		int spaces = 2 * (n - i); 
+		for (int j = 0; j < spaces; j++) { 
+			cout << "" ""; 
+		} 
+
+		for (int j = 0; j <= i; j++) { 
+			cout << ""* ""; 
+		} 
+
+		cout << endl; 
+	} 
+} 
+
+int main() 
+{ 
+	int n = 5; 
+
+	pattern(n); 
+
+	return 0; 
+}"
+Write a Program to Print a Simple Pyramid Pattern,"// C++ Program to print a simple pyramid 
+#include <iostream> 
+using namespace std; 
+
+int main() 
+{ 
+	int rows = 5; 
+
+	for (int i = 1; i <= rows; i++) { 
+		for (int j = rows; j >= i; j--) { 
+			cout << "" ""; 
+		} 
+		for (int k = 1; k <= (2 * i - 1); k++) { 
+			cout << ""*""; 
+		} 
+		cout << endl; 
+	} 
+
+	return 0; 
+}"
+Write a Program to print an Inverted Pyramid ,"// C++ Program to print inverted pyramid 
+#include <iostream> 
+using namespace std; 
+
+int main() 
+{ 
+	int rows = 5; 
+
+	for (int i = rows; i >= 1; i--) { 
+		for (int j = rows; j > i; j--) { 
+			cout << "" ""; 
+		} 
+		for (int k = 1; k <= (2 * i - 1); k++) { 
+			cout << ""*""; 
+		} 
+		cout << endl; 
+	} 
+
+	return 0; 
+}"
+Write a Program to Print a Triangle Star Pattern,"// C++ Program to print a triangle star patter 
+#include <iostream> 
+using namespace std; 
+
+int main() 
+{ 
+	int rows; 
+
+	rows = 5; 
+
+	for (int i = 1; i <= rows; i++) { 
+		for (int j = 1; j <= i; j++) { 
+			cout << ""*""; 
+		} 
+		cout << endl; 
+	} 
+
+	return 0; 
+}"
+Write a Program to Print Floyd�s Triangle,"// C Program to print the Floyd's Triangle 
+#include <stdio.h> 
+
+int main() 
+{ 
+	int rows = 4; 
+	int n = 1; 
+
+	// outer loop to print all rows 
+	for (int i = 0; i < rows; i++) { 
+
+		// innter loop to print abphabet in each row 
+		for (int j = 0; j <= i; j++) { 
+			printf(""%d "", n++); 
+		} 
+		printf(""\n""); 
+	} 
+	return 0; 
+}"
+Write a Program to Print the Pascal Triangle,"// C++ program to print 
+// Pascal�s Triangle 
+#include <iostream> 
+using namespace std; 
+
+void printPascal(int n) 
+{ 
+
+	int arr[n][n]; 
+
+	for (int line = 0; line < n; line++) { 
+		// Every line has number of integers 
+		// equal to line number 
+		for (int i = 0; i <= line; i++) { 
+			// First and last values in every row are 1 
+			if (line == i || i == 0) 
+				arr[line][i] = 1; 
+			else
+				arr[line][i] = arr[line - 1][i - 1] 
+							+ arr[line - 1][i]; 
+			cout << arr[line][i] << "" ""; 
+		} 
+		cout << ""\n""; 
+	} 
+} 
+
+int main() 
+{ 
+	int n = 6; 
+	printPascal(n); 
+	return 0; 
+}"
+Write a Program to Print the Given String in Reverse Order ,"// C++ Program to reversea string 
+#include <cstring> 
+#include <iostream> 
+using namespace std; 
+
+int main() 
+{ 
+
+	int len; 
+
+	string str = ""GeeksforGeeks""; 
+
+	len = str.size(); 
+
+	cout << ""Reverse of the string: ""; 
+	for (int i = len - 1; i >= 0; i--) { 
+		cout << str[i]; 
+	} 
+	cout << endl; 
+
+	return 0; 
+}"
+Write a C++ Program to Print the Given String in Reverse Order Using Recursion,"// C++ Program to 
+// Reverse string using 
+// recursion 
+#include <iostream> 
+using namespace std; 
+
+void reverse_str(string& s, int n, int i) 
+{ 
+	if (n <= i) { 
+		return; 
+	} 
+
+	swap(s[i], s[n]); 
+	reverse_str(s, n - 1, i + 1); 
+} 
+
+int main() 
+{ 
+	string str = ""GeeksforGeeks""; 
+	reverse_str(str, str.length() - 1, 0); 
+	cout << str << endl; 
+}"
+Write a Program to Check if the Given String is Palindrome or not Using Recursion,"// C++ program to check 
+// Whether a given number 
+// Is palindrome or not 
+#include <bits/stdc++.h> 
+using namespace std; 
+
+bool isPalRec(char str[], int s, int n) 
+{ 
+	// If there is only one character 
+	if (s == n) 
+		return true; 
+
+	// If first and last 
+	// characters do not match 
+	if (str[s] != str[n]) 
+		return false; 
+
+	if (s < n + 1) 
+		return isPalRec(str, s + 1, n - 1); 
+
+	return true; 
+} 
+
+bool isPalindrome(char str[]) 
+{ 
+	int n = strlen(str); 
+
+	if (n == 0) 
+		return true; 
+
+	return isPalRec(str, 0, n - 1); 
+} 
+
+int main() 
+{ 
+	char str[] = ""GeeKeeG""; 
+
+	if (isPalindrome(str)) 
+		cout << ""Yes""; 
+	else
+		cout << ""No""; 
+
+	return 0; 
+}"
+Write a Program to Calculate the Length of the String Using Recursion,"// C++ Program for calculating 
+// the length of string 
+#include <iostream> 
+using namespace std; 
+
+int cal(char* str) 
+{ 
+	// base condition 
+	if (*str == '\0') 
+		return 0; 
+	else
+		return 1 + cal(str + 1); 
+} 
+
+int main() 
+{ 
+	char str[] = ""GeeksforGeeks""; 
+	cout << cal(str); 
+	return 0; 
+}"
+Write a Program to Calculate the Factorial of a Number Using Recursion,"// C++ program to calculate 
+// Factorial of given number 
+#include <iostream> 
+using namespace std; 
+
+unsigned long long factorial(unsigned long long n) 
+{ 
+	if (n == 0 || n == 1) 
+		return 1; 
+	return n * factorial(n - 1); 
+} 
+
+int main() 
+{ 
+	unsigned long long num = 15; 
+
+	cout << ""Factorial of "" << num << "" is ""
+		<< factorial(num) << endl; 
+
+	return 0; 
+}"
+Write a Program to Count the Sum of Numbers in a String,"// C++ Program to count the sume of numbers in a string 
+#include <iostream> 
+#include <sstream> 
+#include <string> 
+
+using namespace std; 
+
+int sum_of_numbers(string str) 
+{ 
+	int sum = 0; 
+	for (char ch : str) { 
+		if (isdigit(ch)) { 
+			sum += ch - '0'; 
+		} 
+	} 
+	return sum; 
+} 
+
+int main() 
+{ 
+	string str; 
+
+	str = ""1234""; 
+
+	cout << ""Sum of numbers: "" << sum_of_numbers(str) 
+		<< endl; 
+
+	return 0; 
+}"
+Write a Program to Print All Natural Numbers up to N Without Using a Semi-Colon,"// C++ program to print all natural numbers upto 
+// N without using semi-colon 
+#include <iostream> 
+
+using namespace std; 
+#define N 10 
+
+int main() 
+{ 
+	static int x = 1; 
+	if (cout << x << "" "" && x++ < N && main()) { 
+	} 
+	return 0; 
+}"
+Write a Program to  Swap the Values of Two Variables Without Using any Extra Variable,"// C++ program to check 
+// If two numbers are equal 
+#include <iostream> 
+using namespace std; 
+
+int main() 
+{ 
+	int x = 3; 
+	int y = 4; 
+
+	cout << ""X : "" << x << endl; 
+	cout << ""Y : "" << y << endl; 
+
+	x = x + y; 
+	y = x - y; 
+	x = x - y; 
+
+	cout << endl; 
+	cout << ""After:"" << endl; 
+
+	cout << ""X : "" << x << endl; 
+	cout << ""Y : "" << y << endl; 
+
+	return 0; 
+}"
+Write a Program to Print the Maximum Value of an Unsigned int Using One�s Complement (~) Operator,"// C++ program to print maximum value of 
+// unsigned int. 
+#include <iostream> 
+
+using namespace std; 
+
+int main() 
+{ 
+	unsigned int max; 
+	max = 0; 
+	max = ~max; 
+
+	cout << ""Max value possible : "" << max; 
+
+	return 0; 
+}"
+Write a Program to Check for the Equality of Two Numbers Without Using Arithmetic or Comparison Operator,"// C++ Program to equality of 
+// Two numbers without using 
+// Arithmetic or comparison operator 
+#include <iostream> 
+using namespace std; 
+
+int main() 
+{ 
+	int a = 10, b = 10; 
+
+	if (a ^ b) 
+		cout << ""Not-Equal""; 
+	else
+		cout << ""Equal""; 
+
+	return 0; 
+}"
+Write a Program to Find the Maximum and Minimum of the Two Numbers Without Using the Comparison Operator,"// C++ program to find 
+// maximum and minimum of 
+// Two numbers without using 
+// loop and conditions 
+#include <iostream> 
+
+using namespace std; 
+
+int main() 
+{ 
+	int a = 5, b = 10; 
+
+	cout << ""max :"" << (((a + b) + abs(a - b)) / 2) << endl; 
+	cout << ""min :"" << (((a + b) - abs(a - b)) / 2) << endl; 
+
+	return 0; 
+}"
+Write a Program for Octal to Decimal Conversion,"// C++ Program to convert ocatal to decimal 
+#include <cmath> 
+#include <iostream> 
+
+using namespace std; 
+
+int main() 
+{ 
+	int oct, dec = 0, place = 0; 
+	// 67 is an octal number with binary equivalent 110000 
+	oct = 67; 
+
+	int temp = oct; 
+	while (temp) { 
+		int lastDigit = temp % 10; 
+		temp /= 10; 
+		dec += lastDigit * pow(8, place); 
+		++place; 
+	} 
+
+	cout << ""Decimal equivalent is: "" << dec << endl; 
+
+	return 0; 
+}"
+Write a Program for Hexadecimal to Decimal Conversion,"// C++ Program to convert hexadecimal to decimal conversion 
+#include <cmath> 
+#include <iostream> 
+
+using namespace std; 
+
+int hexToDecimal(char hexDigit) 
+{ 
+	if (hexDigit >= '0' && hexDigit <= '9') { 
+		return int(hexDigit - '0'); 
+	} 
+	else if (hexDigit >= 'A' && hexDigit <= 'F') { 
+		return int(hexDigit - 'A' + 10); 
+	} 
+	else if (hexDigit >= 'a' && hexDigit <= 'f') { 
+		return int(hexDigit - 'a' + 10); 
+	} 
+	return -1; 
+} 
+
+int main() 
+{ 
+	string hex; 
+	int decimal = 0, place = 0; 
+
+	hex = ""67""; 
+
+	int n = hex.length(); 
+	for (int i = n - 1; i >= 0; i--) { 
+		int digit = hexToDecimal(hex[i]); 
+		decimal += digit * pow(16, place); 
+		place++; 
+	} 
+
+	cout << ""Decimal equivalent "" << decimal << endl; 
+
+	return 0; 
+}"
+Write a Program for Decimal to Binary Conversion,"// c++ program to convert decimal to binary 
+#include <bitset> 
+#include <iostream> 
+
+using namespace std; 
+
+int main() 
+{ 
+	int decimal = 7; 
+
+	// simplest method to convert decimal to binary 
+	bitset<32> binary(decimal); 
+
+	cout << ""Binary equivalent: "" << binary << endl; 
+
+	return 0; 
+}"
+Write a Program for Decimal Octal Conversion,"// C++ Program to convert decimal to octal equivalent 
+#include <cmath> 
+#include <iostream> 
+
+using namespace std; 
+
+int main() 
+{ 
+	int decimal, octal = 0, place = 1; 
+
+	decimal = 55; 
+
+	int temp = decimal; 
+	while (temp) { 
+		int lastDigit = temp % 8; 
+		temp /= 8; 
+		octal += lastDigit * place; 
+		place *= 10; 
+	} 
+
+	cout << ""Octal equivalent "" << octal << endl; 
+
+	return 0; 
+}"
+Write a Program for Decimal to Hexadecimal Conversion,"// C++ program to convert decimal to hexadecimal 
+#include <cmath> 
+#include <iostream> 
+#include <string> 
+
+using namespace std; 
+
+string decimalToHexa(int decimal) 
+{ 
+	string hexadecimal = """"; 
+	char hexaDecimals[16] 
+		= { '0', '1', '2', '3', '4', '5', '6', '7', 
+			'8', '9', 'A', 'B', 'C', 'D', 'E', 'F' }; 
+	while (decimal > 0) { 
+		int remainder = decimal % 16; 
+		hexadecimal = hexaDecimals[remainder] + hexadecimal; 
+		decimal /= 16; 
+	} 
+	return hexadecimal; 
+} 
+
+int main() 
+{ 
+	int decimal = 103; 
+
+	cout << ""Hexadecimal equivalent: ""
+		<< decimalToHexa(decimal) << endl; 
+
+	return 0; 
+}"
+Write a Program for Binary to Octal Conversion ,"// C++ implementation to convert a binary number 
+// to octal number 
+#include <bits/stdc++.h> 
+using namespace std; 
+
+// function to create map between binary 
+// number and its equivalent octal 
+void createMap(unordered_map<string, char>* um) 
+{ 
+	(*um)[""000""] = '0'; 
+	(*um)[""001""] = '1'; 
+	(*um)[""010""] = '2'; 
+	(*um)[""011""] = '3'; 
+	(*um)[""100""] = '4'; 
+	(*um)[""101""] = '5'; 
+	(*um)[""110""] = '6'; 
+	(*um)[""111""] = '7'; 
+} 
+
+// Function to find octal equivalent of binary 
+string convertBinToOct(string bin) 
+{ 
+	int l = bin.size(); 
+	int t = bin.find_first_of('.'); 
+
+	// length of string before '.' 
+	int len_left = t != -1 ? t : l; 
+
+	// add min 0's in the beginning to make 
+	// left substring length divisible by 3 
+	for (int i = 1; i <= (3 - len_left % 3) % 3; i++) 
+		bin = '0' + bin; 
+
+	// if decimal point exists 
+	if (t != -1) { 
+		// length of string after '.' 
+		int len_right = l - len_left - 1; 
+
+		// add min 0's in the end to make right 
+		// substring length divisible by 3 
+		for (int i = 1; i <= (3 - len_right % 3) % 3; i++) 
+			bin = bin + '0'; 
+	} 
+
+	// create map between binary and its 
+	// equivalent octal code 
+	unordered_map<string, char> bin_oct_map; 
+	createMap(&bin_oct_map); 
+
+	int i = 0; 
+	string octal = """"; 
+
+	while (1) { 
+		// one by one extract from left, substring 
+		// of size 3 and add its octal code 
+		octal += bin_oct_map[bin.substr(i, 3)]; 
+		i += 3; 
+		if (i == bin.size()) 
+			break; 
+
+		// if '.' is encountered add it to result 
+		if (bin.at(i) == '.') { 
+			octal += '.'; 
+			i++; 
+		} 
+	} 
+
+	// required octal number 
+	return octal; 
+} 
+
+// Driver program to test above 
+int main() 
+{ 
+	string bin = ""1111001010010100001.010110110011011""; 
+	cout << ""Octal number = "" << convertBinToOct(bin); 
+	return 0; 
+}"
+Write a Program for Octal to Binary Conversion,"// C++ program to convert 
+// Octal number to Binary 
+
+#include <iostream> 
+using namespace std; 
+
+// Function to convert an 
+// Octal to Binary Number 
+string OctToBin(string octnum) 
+{ 
+	long int i = 0; 
+
+	string binary = """"; 
+
+	while (octnum[i]) { 
+		switch (octnum[i]) { 
+		case '0': 
+			binary += ""000""; 
+			break; 
+		case '1': 
+			binary += ""001""; 
+			break; 
+		case '2': 
+			binary += ""010""; 
+			break; 
+		case '3': 
+			binary += ""011""; 
+			break; 
+		case '4': 
+			binary += ""100""; 
+			break; 
+		case '5': 
+			binary += ""101""; 
+			break; 
+		case '6': 
+			binary += ""110""; 
+			break; 
+		case '7': 
+			binary += ""111""; 
+			break; 
+		default: 
+			cout << ""\nInvalid Octal Digit "" << octnum[i]; 
+			break; 
+		} 
+		i++; 
+	} 
+
+	return binary; 
+} 
+
+// Driver code 
+int main() 
+{ 
+	// Get the Hexadecimal number 
+	string octnum = ""345""; 
+
+	// Convert Octal to Binary 
+	cout << ""Equivalent Binary Value = ""
+		<< OctToBin(octnum); 
+
+	return 0; 
+}"
+Write a Program to Implement the Use of Encapsulation,"// C++ Program to implement 
+// The concept of Encapsulation 
+#include <iostream> 
+using namespace std; 
+
+class Encapsulation { 
+private: 
+	// data hidden from outer functions 
+	int x; 
+
+public: 
+	// function to set value of 
+	// variable x 
+	void setter(int a) { x = a; } 
+
+	// function to return value of 
+	// variable x 
+	int getter() { return x; } 
+}; 
+
+int main() 
+{ 
+	Encapsulation obj; 
+
+	obj.setter(13); 
+
+	cout << obj.getter(); 
+
+	return 0; 
+}"
+Write a Program to Implement the Concept of Abstraction,"// C++ Program to implement 
+// Working of Abstraction 
+#include <iostream> 
+using namespace std; 
+
+class implementAbstraction { 
+private: 
+	int p, q; 
+
+public: 
+	// method to set values of 
+	// private members 
+	void setter(int x, int y) 
+	{ 
+		p = x; 
+		q = y; 
+	} 
+
+	void display() 
+	{ 
+		cout << ""p = "" << p << endl; 
+		cout << ""q = "" << q << endl; 
+	} 
+}; 
+
+int main() 
+{ 
+	implementAbstraction obj; 
+
+	obj.setter(1, 2); 
+	obj.display(); 
+
+	return 0; 
+}"
+Write a Program to Implement the Concept of Compile-Time Polymorphism or Function Overloading,"// C++ program to demonstrate 
+// Function overloading or 
+// Compile-time Polymorphism 
+#include <iostream> 
+
+using namespace std; 
+
+class Geeks { 
+public: 
+	// Function same name different 
+	// Parameters 
+	void func(int x) 
+	{ 
+		cout << ""value of x is "" << x << endl; 
+	} 
+
+	void func(double x) 
+	{ 
+		cout << ""value of x is "" << x << endl; 
+	} 
+
+	void func(int x, int y) 
+	{ 
+		cout << ""value of x and y is "" << x << "", "" << y 
+			<< endl; 
+	} 
+}; 
+
+int main() 
+{ 
+	Geeks obj1; 
+
+	// Function being called depends 
+	// on the parameters passed 
+	// func() is called with int value 
+	obj1.func(10); 
+
+	// func() is called with double value 
+	obj1.func(5.321); 
+
+	// func() is called with 2 int values 
+	obj1.func(94, 32); 
+	return 0; 
+}"
+Write a Program to Implement the Concept of Operator Overloading,"// C++ program to demonstrate 
+// Operator Overloading 
+#include <iostream> 
+using namespace std; 
+
+class Complex { 
+private: 
+	int real, imag; 
+
+public: 
+	Complex(int r = 0, int i = 0) 
+	{ 
+		real = r; 
+		imag = i; 
+	} 
+
+	// This is automatically called 
+	// when '+' is used 
+	Complex operator+(Complex const& obj) 
+	{ 
+		Complex res; 
+		res.real = real + obj.real; 
+		res.imag = imag + obj.imag; 
+		return res; 
+	} 
+	void print() { cout << real << "" + "" << imag << ""i\n""; } 
+}; 
+
+int main() 
+{ 
+	Complex c1(15, 5), c2(3, 5); 
+
+	Complex c3 = c1 + c2; 
+	c3.print(); 
+}"
+Write a Program to Implement Single-Level Inheritance,"// C++ Program to implement 
+// Single level inheritance 
+#include <iostream> 
+#include <string.h> 
+
+using namespace std; 
+
+class Person { 
+	int id; 
+	char name[100]; 
+
+public: 
+	void set_p(int id, char* name) 
+	{ 
+		strcpy(this->name, name); 
+		this->id = id; 
+	} 
+
+	void display_p() 
+	{ 
+		cout << endl << id << ""\t"" << name << ""\t""; 
+	} 
+}; 
+
+class Student : private Person { 
+	char course[50]; 
+	int fee; 
+
+public: 
+	void set_s(int id, char* name, char* course, int fee) 
+	{ 
+		set_p(id, name); 
+
+		strcpy(this->course, course); 
+
+		this->fee = fee; 
+	} 
+
+	void display_s() 
+	{ 
+		display_p(); 
+
+		cout << course << ""\t"" << fee << endl; 
+	} 
+}; 
+
+main() 
+{ 
+	Student s; 
+	char name[] = ""XYZ""; 
+	char course[] = ""ABC""; 
+	s.set_s(132451, name, course, 100000); 
+	s.display_s(); 
+	return 0; 
+}"
+Write a Program to Create a Class for Complex Numbers,"// C++ Program to create a class of complex numbers 
+#include <bits/stdc++.h> 
+using namespace std; 
+
+// complex number datatype 
+struct c { 
+	double real; 
+	double img; 
+}; 
+
+// complex clss 
+class Complex { 
+private: 
+	struct c num; 
+
+public: 
+	// constructors 
+	Complex() {} 
+	Complex(double real, double img) 
+	{ 
+		num.img = img; 
+		num.real = real; 
+	} 
+	Complex(Complex& var) 
+	{ 
+		num.img = var.num.img; 
+		num.real = var.num.real; 
+	} 
+
+	// utility functions 
+	void print() 
+	{ 
+		cout << num.real << "" + i"" << num.img << endl; 
+	} 
+
+	double imag() { return num.img; } 
+	double real() { return num.real; } 
+
+	// overloaded operators 
+	Complex operator+(Complex& obj1) 
+	{ 
+		Complex var; 
+		var.num.real = num.real + obj1.num.real; 
+		var.num.img = num.img + obj1.num.img; 
+
+		return var; 
+	} 
+	Complex operator-(Complex& obj1) 
+	{ 
+		Complex var; 
+		var.num.real = num.real - obj1.num.real; 
+		var.num.img = num.img - obj1.num.img; 
+
+		return var; 
+	} 
+
+	Complex operator*(Complex& obj1) 
+	{ 
+		Complex var; 
+		var.num.real = num.real * obj1.num.real 
+					- num.img * obj1.num.img; 
+		var.num.img = num.real * obj1.num.img 
+					+ num.img * obj1.num.real; 
+
+		return var; 
+	} 
+}; 
+
+// driver code 
+int main() 
+{ 
+	Complex a(11, 12), b(5, 8); 
+	Complex c; 
+	c = a + b; 
+
+	a.print(); 
+	b.print(); 
+	c.print(); 
+
+	return 0; 
+}"
+Write a Program to Implement the Inch Feet System,"// C++ Program to create a class of inchFeet length system 
+#include <bits/stdc++.h> 
+using namespace std; 
+
+// inch-feet length system datatype 
+struct c { 
+	double feet; 
+	double inch; 
+}; 
+
+// inchFeet class 
+class inchFeet { 
+private: 
+	struct c length; 
+
+public: 
+	// constructors 
+	inchFeet() {} 
+	inchFeet(double feet, double inch) 
+	{ 
+		length.inch = inch; 
+		length.feet = feet; 
+	} 
+	inchFeet(inchFeet& var) 
+	{ 
+		length.inch = var.length.inch; 
+		length.feet = var.length.feet; 
+	} 
+
+	// utility functions 
+	void print() 
+	{ 
+		cout << length.feet << "" feet and "" << length.inch 
+			<< "" inches"" << endl; 
+	} 
+
+	double inches() { return length.inch; } 
+	double feet() { return length.feet; } 
+
+	// overloaded operators 
+	inchFeet operator+(inchFeet& obj1) 
+	{ 
+		inchFeet var; 
+		var.length.feet = length.feet + obj1.length.feet; 
+		var.length.inch = length.inch + obj1.length.inch; 
+		if (var.length.inch >= 12.0) { 
+			var.length.feet++; 
+			var.length.inch - 12.0; 
+		} 
+
+		return var; 
+	} 
+	inchFeet operator-(inchFeet& obj1) 
+	{ 
+		inchFeet var; 
+		struct c temp = length; 
+		if (temp.feet > obj1.length.feet) { 
+			if (temp.inch < obj1.length.inch) { 
+				temp.feet--; 
+				temp.inch += 12; 
+			} 
+			var.length.feet = temp.feet - obj1.length.feet; 
+			var.length.inch = temp.inch - obj1.length.inch; 
+		} 
+		else { 
+			cout << ""Negative Length is not Possible\n""; 
+		} 
+		return var; 
+	} 
+}; 
+
+// driver code 
+int main() 
+{ 
+	inchFeet a(11, 4), b(5, 8); 
+	inchFeet c; 
+	c = a - b; 
+
+	a.print(); 
+	b.print(); 
+	c.print(); 
+
+	return 0; 
+}"
+Write a Program to Implement Bubble Sort,"// C++ program to implement 
+// of Bubble sort 
+#include <iostream> 
+using namespace std; 
+
+// Function to sort 
+void bubbleSort(int arr[], int n) 
+{ 
+	int i, j; 
+	for (i = 0; i < n - 1; i++) 
+
+		// Last i elements are already 
+		// in place 
+		for (j = 0; j < n - i - 1; j++) 
+			if (arr[j] > arr[j + 1]) 
+				swap(arr[j], arr[j + 1]); 
+} 
+
+// Function to print an array 
+void printArray(int arr[], int size) 
+{ 
+	int i; 
+	for (i = 0; i < size; i++) 
+		cout << arr[i] << "" ""; 
+	cout << endl; 
+} 
+
+int main() 
+{ 
+	int arr[] = { 3, 1, 4, 2, 5 }; 
+	int N = sizeof(arr) / sizeof(arr[0]); 
+
+	bubbleSort(arr, N); 
+
+	cout << ""Sorted array: ""; 
+	printArray(arr, N); 
+	return 0; 
+}"
+Write a Program to Implement Insertion Sort,"// C++ program to implement 
+// Insertion sort 
+#include <bits/stdc++.h> 
+using namespace std; 
+
+// Function to sort using 
+// Insertion 
+void insertion_sort(int arr[], int n) 
+{ 
+	int i, key, j; 
+	for (i = 1; i < n; i++) { 
+		key = arr[i]; 
+		j = i - 1; 
+
+		while (j >= 0 && arr[j] > key) { 
+			arr[j + 1] = arr[j]; 
+			j = j - 1; 
+		} 
+		arr[j + 1] = key; 
+	} 
+} 
+
+// Print array 
+void print_array(int arr[], int n) 
+{ 
+	cout << "" Sorted array:""; 
+	for (int i = 0; i < n; i++) 
+		cout << arr[i] << "" ""; 
+	cout << endl; 
+} 
+
+int main() 
+{ 
+	int arr[] = { 1, 4, 3, 2, 5 }; 
+	int N = sizeof(arr) / sizeof(arr[0]); 
+
+	insertion_sort(arr, N); 
+	print_array(arr, N); 
+
+	return 0; 
+}"
+Write a Program to Implement Selection Sort,"// C++ program to implement 
+// Selection sort 
+#include <iostream> 
+using namespace std; 
+
+// Swap function 
+void swap(int* p, int* q) 
+{ 
+	int temp = *p; 
+	*p = *q; 
+	*q = temp; 
+} 
+
+void selectionSort(int arr[], int n) 
+{ 
+	int min_index; 
+
+	for (int i = 0; i < n - 1; i++) { 
+		min_index = i; 
+		for (int j = i + 1; j < n; j++) 
+			if (arr[j] < arr[min_index]) 
+				min_index = j; 
+
+		// Swap the found minimum element 
+		// with the first element 
+		if (min_index != i) 
+			swap(&arr[min_index], &arr[i]); 
+	} 
+} 
+
+// Print Array 
+void printArray(int arr[], int size) 
+{ 
+	int i; 
+	for (i = 0; i < size; i++) 
+		cout << arr[i] << "" ""; 
+	cout << endl; 
+} 
+
+int main() 
+{ 
+	int arr[] = { 5, 4, 3, 2, 1 }; 
+	int n = sizeof(arr) / sizeof(arr[0]); 
+
+	selectionSort(arr, n); 
+
+	cout << ""Sorted array: ""; 
+	printArray(arr, n); 
+
+	return 0; 
+}"
+Write a Program to Implement Merge Sort,"// C++ program to implement 
+// Merge Sort 
+#include <iostream> 
+using namespace std; 
+
+// Merge Sorted arrays 
+void merge(int array[], int const left, int const mid, 
+		int const right) 
+{ 
+	auto const subArrayOne = mid - left + 1; 
+	auto const subArrayTwo = right - mid; 
+
+	// Create temp arrays 
+	auto *leftArray = new int[subArrayOne], 
+		*rightArray = new int[subArrayTwo]; 
+
+	// Copy data to temp arrays leftArray[] and rightArray[] 
+	for (auto i = 0; i < subArrayOne; i++) 
+		leftArray[i] = array[left + i]; 
+	for (auto j = 0; j < subArrayTwo; j++) 
+		rightArray[j] = array[mid + 1 + j]; 
+
+	auto indexOfSubArrayOne = 0, indexOfSubArrayTwo = 0; 
+	int indexOfMergedArray = left; 
+
+	// Merge the temp arrays back into array[left..right] 
+	while (indexOfSubArrayOne < subArrayOne 
+		&& indexOfSubArrayTwo < subArrayTwo) { 
+		if (leftArray[indexOfSubArrayOne] 
+			<= rightArray[indexOfSubArrayTwo]) { 
+			array[indexOfMergedArray] 
+				= leftArray[indexOfSubArrayOne]; 
+			indexOfSubArrayOne++; 
+		} 
+		else { 
+			array[indexOfMergedArray] 
+				= rightArray[indexOfSubArrayTwo]; 
+			indexOfSubArrayTwo++; 
+		} 
+		indexOfMergedArray++; 
+	} 
+
+	// Copying remaing elements 
+	while (indexOfSubArrayOne < subArrayOne) { 
+		array[indexOfMergedArray] 
+			= leftArray[indexOfSubArrayOne]; 
+		indexOfSubArrayOne++; 
+		indexOfMergedArray++; 
+	} 
+
+	while (indexOfSubArrayTwo < subArrayTwo) { 
+		array[indexOfMergedArray] 
+			= rightArray[indexOfSubArrayTwo]; 
+		indexOfSubArrayTwo++; 
+		indexOfMergedArray++; 
+	} 
+	delete[] leftArray; 
+	delete[] rightArray; 
+} 
+
+void mergeSort(int array[], int const begin, int const end) 
+{ 
+	// base condition 
+	if (begin >= end) 
+		return; 
+
+	auto mid = begin + (end - begin) / 2; 
+	mergeSort(array, begin, mid); 
+	mergeSort(array, mid + 1, end); 
+	merge(array, begin, mid, end); 
+} 
+
+// Print Array 
+void print_array(int A[], int size) 
+{ 
+	for (auto i = 0; i < size; i++) 
+		cout << A[i] << "" ""; 
+} 
+
+int main() 
+{ 
+	int arr[] = { 5, 6, 3, 10, 1, 4, 9 }; 
+	auto arr_size = sizeof(arr) / sizeof(arr[0]); 
+
+	cout << ""Array: ""; 
+	print_array(arr, arr_size); 
+
+	mergeSort(arr, 0, arr_size - 1); 
+
+	cout << ""\nSorted array: ""; 
+	print_array(arr, arr_size); 
+	return 0; 
+}"
+Write a Program to Implement Quick Sort,"// C++ Program to implement 
+// QuickSort 
+#include <iostream> 
+using namespace std; 
+
+// Swap elements 
+void swap(int* a, int* b) 
+{ 
+	int t = *a; 
+	*a = *b; 
+	*b = t; 
+} 
+
+// Partition function to check pivot location 
+int partition(int arr[], int low, int high) 
+{ 
+	int pivot = arr[high]; // pivot 
+	int i = (low - 1); 
+
+	for (int j = low; j <= high - 1; j++) { 
+		// If current element is smaller than the pivot 
+		if (arr[j] < pivot) { 
+			i++; 
+			swap(&arr[i], &arr[j]); 
+		} 
+	} 
+	swap(&arr[i + 1], &arr[high]); 
+	return (i + 1); 
+} 
+
+// Quick Sort function 
+void quickSort(int arr[], int low, int high) 
+{ 
+	if (low < high) { 
+		// pi is partitioning index, arr[p] is now 
+		// at right place 
+		int pi = partition(arr, low, high); 
+
+		// Separately sort elements before 
+		// partition and after partition 
+		quickSort(arr, low, pi - 1); 
+		quickSort(arr, pi + 1, high); 
+	} 
+} 
+
+// Print Array 
+void printArray(int arr[], int size) 
+{ 
+	int i; 
+	for (i = 0; i < size; i++) 
+		cout << arr[i] << "" ""; 
+	cout << endl; 
+} 
+
+int main() 
+{ 
+	int arr[] = { 2, 5, 6, 9, 1, 3, 4 }; 
+	int n = sizeof(arr) / sizeof(arr[0]); 
+
+	cout << ""Array: ""; 
+	printArray(arr, n); 
+
+	quickSort(arr, 0, n - 1); 
+
+	cout << ""Sorted array: ""; 
+	printArray(arr, n); 
+	return 0; 
+}"
+Write a Program to Implement Linear Search,"// C++ Program to implement 
+// Linear Sort 
+#include <iostream> 
+using namespace std; 
+
+int search(int arr[], int N, int x) 
+{ 
+	int i; 
+	for (i = 0; i < N; i++) 
+		if (arr[i] == x) 
+			return i; 
+	return -1; 
+} 
+
+int main() 
+{ 
+	int arr[] = { 5, 4, 1, 6, 10, 9, 23, 2 }; 
+	int x = 9; 
+	int N = sizeof(arr) / sizeof(arr[0]); 
+
+	int result = search(arr, N, x); 
+
+	if (result == -1) 
+		cout << ""Element is not present in array""; 
+	else
+		cout << ""Element is present at index "" << result; 
+	return 0; 
+}"
+Write a Program to Implement Binary Search,"// C++ program to implement 
+// Binary Search 
+#include <iostream> 
+using namespace std; 
+
+// Binary Search Function 
+int binarySearch(int arr[], int l, int r, int x) 
+{ 
+	if (r >= l) { 
+		// Middle element 
+		int mid = l + (r - l) / 2; 
+
+		if (arr[mid] == x) 
+			return mid; 
+
+		if (arr[mid] > x) 
+			return binarySearch(arr, l, mid - 1, x); 
+
+		return binarySearch(arr, mid + 1, r, x); 
+	} 
+
+	// We reach here when element is not 
+	// present in array 
+	return -1; 
+} 
+
+int main(void) 
+{ 
+	int arr[] = { 1, 2, 3, 4, 5, 6 }; 
+	int x = 5; 
+	int n = sizeof(arr) / sizeof(arr[0]); 
+
+	int result = binarySearch(arr, 0, n - 1, x); 
+
+	if (result == -1) 
+		cout << ""Element is not present in array""; 
+	else
+		cout << ""Element is present at index "" << result; 
+	return 0; 
+}"
+Write a Program to Find the Index of a Given Element in a Vector,"// C++ program to find the index 
+// of an element in a vector 
+#include <bits/stdc++.h> 
+
+using namespace std; 
+
+// print index of element 
+void print_index(vector<int> v, int element) 
+{ 
+	auto it = find(v.begin(), v.end(), element); 
+
+	// Condition if element found 
+	if (it != v.end()) { 
+
+		// Calculating the index 
+		// of element 
+		int index = it - v.begin(); 
+		cout << index << endl; 
+	} 
+	// No such element in vector 
+	else { 
+		cout << ""-1"" << endl; 
+	} 
+} 
+
+int main() 
+{ 
+	vector<int> v = { 1, 2, 3, 4, 5, 6 }; 
+
+	int element = 5; 
+	print_index(v, element); 
+
+	return 0; 
+}"
+Write a Program to Remove Duplicate Elements in an Array Using STL,"// C++ program to remove the 
+// duplicate elements from the array 
+// using STL in C++ 
+#include <bits/stdc++.h> 
+
+using namespace std; 
+
+// Function to remove duplicate elements 
+void removeDuplicates(int arr[], int n) 
+{ 
+
+	int i; 
+
+	set<int> s; 
+
+	// Insert the array elements 
+	// into the set 
+	for (i = 0; i < n; i++) { 
+		s.insert(arr[i]); 
+	} 
+
+	set<int>::iterator it; 
+
+	// Print the array with duplicates removed 
+	cout << ""\nAfter removing duplicates:\n""; 
+	for (it = s.begin(); it != s.end(); ++it) 
+		cout << *it << "" ""; 
+	cout << '\n'; 
+} 
+
+int main() 
+{ 
+	int arr[] = { 1, 2, 2, 4, 3, 3, 2, 1 }; 
+
+	int n = sizeof(arr) / sizeof(arr[0]); 
+
+	// Print array 
+	cout << ""\nBefore removing duplicates:\n""; 
+	for (int i = 0; i < n; i++) 
+		cout << arr[i] << "" ""; 
+
+	removeDuplicates(arr, n); 
+
+	return 0; 
+}"
+Write a Program to Sort an Array in Descending Order Using STL,"// C++ program to sort Array 
+// in descending order 
+#include <bits/stdc++.h> 
+using namespace std; 
+
+int main() 
+{ 
+	// Get the array 
+	int arr[] = { 1, 2, 3, 4, 5, 6 }; 
+
+	// Compute the sizes 
+	int n = sizeof(arr) / sizeof(arr[0]); 
+
+	// Print the array 
+	cout << ""Array: ""; 
+	for (int i = 0; i < n; i++) 
+		cout << arr[i] << "" ""; 
+
+	// Sort the array in descending order 
+	sort(arr, arr + n, greater<int>()); 
+
+	// Print the array 
+	cout << ""\nDescending Sorted Array:""; 
+	for (int i = 0; i < n; i++) 
+		cout << arr[i] << "" ""; 
+
+	return 0; 
+}"
+Write a Program to Calculate the Frequency of Each Word in the Given String,"// C++ program to calculate 
+// frequency of each word 
+// in given string 
+#include <bits/stdc++.h> 
+using namespace std; 
+
+// Function to print frequency of each word 
+void printFrequency(string str) 
+{ 
+	map<string, int> M; 
+
+	string word = """"; 
+
+	for (int i = 0; i < str.size(); i++) { 
+
+		// if element is empty 
+		if (str[i] == ' ') { 
+
+			// If the current word 
+			// is not found then insert 
+			// current word with frequency 1 
+			if (M.find(word) == M.end()) { 
+				M.insert(make_pair(word, 1)); 
+				word = """"; 
+			} 
+			else { 
+				M[word]++; 
+				word = """"; 
+			} 
+		} 
+
+		else
+			word += str[i]; 
+	} 
+
+	// Storing the last word of the string 
+	if (M.find(word) == M.end()) 
+		M.insert(make_pair(word, 1)); 
+
+	// Update the frequency 
+	else
+		M[word]++; 
+
+	// Traverse the map 
+	for (auto& it : M) { 
+		cout << it.first << "" - "" << it.second << endl; 
+	} 
+} 
+
+int main() 
+{ 
+	string str = ""Geeks For Geeks is for Geeks""; 
+
+	printFrequency(str); 
+	return 0; 
+}"
+Write a Program to Find k Maximum Elements of an Array in the Original Order,"// C++ program to find k Maximum elements 
+#include <bits/stdc++.h> 
+using namespace std; 
+
+// Function to print k Maximum elements 
+void printMax(int arr[], int n, int k) 
+{ 
+	int result[n], c[n]; 
+
+	// Coping the array a 
+	// into c and initialising 
+	for (int i = 0; i < n; i++) { 
+		c[i] = arr[i]; 
+		result[i] = 0; 
+	} 
+
+	for (int i = 0; i < k; i++) { 
+
+		int maxi = INT_MIN; 
+		int index; 
+		for (int j = 0; j < n; j++) { 
+			if (arr[j] > maxi) { 
+				maxi = arr[j]; 
+				index = j; 
+			} 
+		} 
+		// Assigning 1 in order 
+		// to mark the position 
+		// of all k maximum numbers 
+		result[index] = 1; 
+		arr[index] = INT_MIN; 
+	} 
+
+	// Printing elements 
+	for (int i = 0; i < n; i++) { 
+		if (result[i] == 1) 
+			cout << c[i] << "" ""; 
+	} 
+} 
+
+int main() 
+{ 
+	int arr[] = { 50, 8, 45, 12, 25, 40, 84 }; 
+	int n = sizeof(arr) / sizeof(arr[0]); 
+	int k = 3; 
+	printMax(arr, n, k); 
+	return 0; 
+}"
+Write a Program to Find All Unique Subsets of a Given Set Using STL,"// C++ code for the above approach: 
+
+#include <bits/stdc++.h> 
+using namespace std; 
+
+void solve(vector<int>& arr, int n, set<vector<int> >& ans, 
+		vector<int> v, int i) 
+{ 
+	// Base Condition 
+	if (i >= n) { 
+		ans.insert(v); 
+		return; 
+	} 
+
+	solve(arr, n, ans, v, i + 1); 
+
+	v.push_back(arr[i]); 
+	solve(arr, n, ans, v, i + 1); 
+} 
+
+vector<vector<int> > AllSubsets(vector<int> arr, int n) 
+{ 
+
+	// Set of vectors to store 
+	// required unique subsets 
+	set<vector<int> > ans; 
+
+	sort(arr.begin(), arr.end()); 
+	vector<int> v; 
+	solve(arr, n, ans, v, 0); 
+
+	// Vector of vectors to store final result 
+	vector<vector<int> > res; 
+	while (!ans.empty()) { 
+		res.push_back(*ans.begin()); 
+		ans.erase(ans.begin()); 
+	} 
+	return res; 
+} 
+
+// Print Function 
+void print(int N, vector<int>& A) 
+{ 
+	vector<vector<int> > result = AllSubsets(A, N); 
+
+	// printing the output 
+	for (int i = 0; i < result.size(); i++) { 
+		cout << '('; 
+		for (int j = 0; j < result[i].size(); j++) { 
+			cout << result[i][j]; 
+			if (j < result[i].size() - 1) 
+				cout << "" ""; 
+		} 
+		cout << ""), ""; 
+	} 
+	cout << ""\n""; 
+} 
+
+int main() 
+{ 
+	int N = 3; 
+	vector<int> A = { 1, 2, 3 }; 
+
+	print(N, A); 
+	return 0; 
+}"
+Write a Program to Iterate Over a Queue Without Removing the Element,"// C++ program to iterate a 
+// STL Queue by Creating 
+// copy of given queue 
+#include <iostream> 
+#include <queue> 
+using namespace std; 
+int main() 
+{ 
+	queue<int> q; 
+
+	// Inserting elements in queue 
+	q.push(1); 
+	q.push(2); 
+	q.push(3); 
+	q.push(4); 
+	q.push(5); 
+
+	// Copy queue 
+	queue<int> copy_queue = q; 
+
+	cout << ""Queue elements :\n""; 
+
+	while (!copy_queue.empty()) { 
+		cout << copy_queue.front() << "" ""; 
+
+		copy_queue.pop(); 
+	} 
+
+	return 0; 
+}"
+Write a Program for the Implementation of Stacks Using an  Array,"// C++ Program to implement stacks using array 
+#include <iostream> 
+using namespace std; 
+
+// Maximum size of stack 
+
+#define MAX 100 
+
+class Stack { 
+private: 
+	int top; 
+	// Array to store stack elements 
+	int arr[MAX]; 
+
+public: 
+	// Constructor to initialize top as -1 
+	Stack() { top = -1; } 
+
+	// Function to push an element to the stack 
+	void push(int x) 
+	{ 
+		if (top == MAX - 1) { 
+			cout << ""Stack overflow"" << endl; 
+			return; 
+		} 
+		arr[++top] = x; 
+	} 
+
+	// Function to pop an element from the stack 
+	int pop() 
+	{ 
+		if (top == -1) { 
+			cout << ""Stack underflow"" << endl; 
+			return -1; 
+		} 
+		return arr[top--]; 
+	} 
+
+	// Function to check if stack is empty 
+	bool isEmpty() { return (top == -1); } 
+
+	// Function to return the top element of the stack 
+	int peek() 
+	{ 
+		if (top == -1) { 
+			cout << ""Stack is empty"" << endl; 
+			return -1; 
+		} 
+		return arr[top]; 
+	} 
+}; 
+
+int main() 
+{ 
+	Stack s; 
+	s.push(1); 
+	s.push(2); 
+	s.push(3); 
+	s.push(4); 
+	s.push(5); 
+
+	cout << ""Popped element: "" << s.pop() << endl; 
+	cout << ""Top element: "" << s.peek() << endl; 
+
+	return 0; 
+}"
+Write a Program for the Implementation of a Queue Using an Array,"// C++ Program to implement queue using array 
+#include <iostream> 
+using namespace std; 
+
+// Maximum size of the queue 
+#define MAX 100 
+
+class Queue { 
+private: 
+	int front, rear; 
+	// Array to store queue elements 
+	int arr[MAX]; 
+
+public: 
+	// Constructor to initialize front and rear as -1 
+
+	Queue() { front = rear = -1; } 
+	// Function to add an element to the queue 
+	void enqueue(int x) 
+	{ 
+		if (rear == MAX - 1) { 
+			cout << ""Error: Queue overflow"" << endl; 
+			return; 
+		} 
+		arr[++rear] = x; 
+		if (front == -1) 
+			front = 0; 
+	} 
+
+	// Function to remove an element from the queue 
+	int dequeue() 
+	{ 
+		if (front == -1) { 
+			cout << ""Queue underflow"" << endl; 
+			return -1; 
+		} 
+		int x = arr[front]; 
+		if (front == rear) 
+			front = rear = -1; 
+		else
+			front++; 
+		return x; 
+	} 
+
+	// Function to check if queue is empty 
+	bool isEmpty() { return (front == -1); } 
+
+	// Function to return the front element of the queue 
+	int peek() 
+	{ 
+		if (front == -1) { 
+			cout << ""Queue is empty"" << endl; 
+			return -1; 
+		} 
+		return arr[front]; 
+	} 
+}; 
+
+int main() 
+{ 
+	Queue q; 
+	q.enqueue(1); 
+	q.enqueue(2); 
+	q.enqueue(3); 
+	q.enqueue(4); 
+	q.enqueue(5); 
+
+	cout << ""Dequeued element: "" << q.dequeue() << endl; 
+	cout << ""Front element: "" << q.peek() << endl; 
+
+	return 0; 
+}"
+Write a Program Implementation of Stacks Using a Queue,"// C++ Program to implement 
+// Stack using queue 
+#include <bits/stdc++.h> 
+
+using namespace std; 
+
+class Stack { 
+	queue<int> q1, q2; 
+
+public: 
+	void push(int x) 
+	{ 
+		// Push x first in empty q2 
+		q2.push(x); 
+
+		// Push all the remaining 
+		// elements in q1 to q2. 
+		while (!q1.empty()) { 
+			q2.push(q1.front()); 
+			q1.pop(); 
+		} 
+
+		// swap the names of two queues 
+		queue<int> q = q1; 
+		q1 = q2; 
+		q2 = q; 
+	} 
+
+	void pop() 
+	{ 
+		// if no elements are there in q1 
+		if (q1.empty()) 
+			return; 
+		q1.pop(); 
+	} 
+
+	int top() 
+	{ 
+		if (q1.empty()) 
+			return -1; 
+		return q1.front(); 
+	} 
+
+	int size() { return q1.size(); } 
+}; 
+
+int main() 
+{ 
+	Stack s; 
+
+	// Inserting elements in Stack 
+	s.push(1); 
+	s.push(2); 
+	s.push(3); 
+	s.push(4); 
+
+	cout << ""Size: "" << s.size() << endl; 
+	cout << s.top() << endl; 
+	s.pop(); 
+	cout << s.top() << endl; 
+	s.pop(); 
+	cout << s.top() << endl; 
+
+	cout << ""Size: "" << s.size() << endl; 
+	return 0; 
+}"
+Write a Program to Implement a Stack Using the List in STL,"// C++ Program to implement 
+// stack using list 
+#include <bits/stdc++.h> 
+
+using namespace std; 
+
+// Template declared 
+template <typename T> class Stack { 
+public: 
+	list<T> l; 
+	int cs = 0; 
+	// current size of the stack 
+
+	// pushing an element into the stack 
+	void push(T d) 
+	{ 
+		cs++; 
+		// increasing the current size of the stack 
+		l.push_front(d); 
+	} 
+
+	// popping an element from the stack 
+	void pop() 
+	{ 
+		if (cs <= 0) { 
+			// cannot pop us stack does not contain an 
+			// elements 
+			cout << ""Stack empty"" << endl; 
+		} 
+		else { 
+			// decreasing the current size of the stack 
+			cs--; 
+			l.pop_front(); 
+		} 
+	} 
+
+	// if current size is 0 then stack is empty 
+	bool empty() { return cs == 0; } 
+
+	// getting the element present at the top of the stack 
+	T top() { return l.front(); } 
+	int size() 
+	{ 
+		// getting the size of the stack 
+		return cs; 
+	} 
+
+	// printing the elements of the stack 
+	void print() 
+	{ 
+		for (auto x : l) { 
+			cout << x << endl; 
+		} 
+	} 
+}; 
+int main() 
+{ 
+	// Inserting elements in stack 
+	Stack<int> s; 
+	s.push(1); 
+	s.push(2); 
+	s.push(3); 
+	s.push(4); 
+
+	cout << ""Size: "" << s.size() << endl; 
+	cout << ""Top element:"" << s.top() << endl; 
+	s.pop(); 
+	cout << ""Top element:"" << s.top() << endl; 
+	s.pop(); 
+	cout << ""Top element:"" << s.top() << endl; 
+	cout << ""Size:"" << s.size() << endl; 
+	return 0; 
+}"
+Write a Program to Determine Array is a Subset of Another Array or Not,"// C++ Program to check if 
+// Array is a subset of another array or not 
+
+#include <iostream> 
+using namespace std; 
+
+bool isSubset(int arr1[], int arr2[], int m, int n) 
+{ 
+	int i = 0; 
+	int j = 0; 
+	for (i = 0; i < n; i++) { 
+		for (j = 0; j < m; j++) { 
+			if (arr2[i] == arr1[j]) 
+				break; 
+		} 
+
+		if (j == m) 
+			return 0; 
+	} 
+
+	return 1; 
+} 
+
+int main() 
+{ 
+	int arr1[] = { 1, 11, 31, 21, 30, 17 }; 
+	int arr2[] = { 11, 30, 17, 1 }; 
+
+	int m = sizeof(arr1) / sizeof(arr1[0]); 
+	int n = sizeof(arr2) / sizeof(arr2[0]); 
+
+	if (isSubset(arr1, arr2, m, n)) 
+		cout << ""arr2 is subset of arr1 ""; 
+	else
+		cout << ""arr2 is not a subset of arr1""; 
+
+	return 0; 
+}"
+Write a Program for Finding the Circular Rotation of an Array by K Positions,"// C++ Program for Finding 
+// Circular rotation of an array 
+// by K positions 
+#include <iostream> 
+using namespace std; 
+
+void Rotate(int arr[], int k, int n) 
+{ 
+	// temp array 
+	int temp[n]; 
+
+	// Keepig track of the current index 
+	// of temp[] 
+	int t = 0; 
+
+	// Storing the n - d elements of 
+	// array arr[] to the front of temp[] 
+	for (int i = k; i < n; i++) { 
+		temp[t] = arr[i]; 
+		t++; 
+	} 
+
+	// Storing the first d elements of array arr[] 
+	// into temp 
+	for (int i = 0; i < k; i++) { 
+		temp[t] = arr[i]; 
+		t++; 
+	} 
+
+	// Copying the elements of temp[] in arr[] 
+	for (int i = 0; i < n; i++) { 
+		arr[i] = temp[i]; 
+	} 
+} 
+
+void print_array(int arr[], int n) 
+{ 
+	for (int i = 0; i < n; i++) { 
+		cout << arr[i] << "" ""; 
+	} 
+} 
+
+int main() 
+{ 
+	int arr[] = { 1, 2, 3, 4, 5 }; 
+	int N = sizeof(arr) / sizeof(arr[0]); 
+	int k = 2; 
+
+	// Function calling 
+	Rotate(arr, k, N); 
+	print_array(arr, N); 
+
+	return 0; 
+}"
+Write a Program to Sort the First Half in Ascending Order and the Second Half in Descending,"// C++ Program to Sort first half 
+// in ascending order and second half in descending 
+#include <iostream> 
+using namespace std; 
+
+void ascDecFunc(int a[], int n) 
+{ 
+	int temp; 
+	for (int i = 0; i < n - 1; i++) { 
+		for (int j = 0; j < n / 2; j++) { 
+			if (a[j] > a[j + 1]) { 
+				temp = a[j]; 
+				a[j] = a[j + 1]; 
+				a[j + 1] = temp; 
+			} 
+		} 
+
+		for (int j = n / 2; j < n - 1; j++) { 
+			if (a[j] < a[j + 1]) { 
+				temp = a[j]; 
+				a[j] = a[j + 1]; 
+				a[j + 1] = temp; 
+			} 
+		} 
+	} 
+
+	for (int i = 0; i < n; i++) 
+		cout << a[i] << "" ""; 
+} 
+
+int main() 
+{ 
+	int arr[] = { 1, 2, 3, 4, 5, 6, 7, 8 }; 
+	int len = sizeof(arr) / sizeof(arr[0]); 
+
+	ascDecFunc(arr, len); 
+
+	return 0; 
+}"
+Write a Program to Print the Given String in Reverse Order,"// C++ program to demonstrate reverse 
+// of a string using Last to First 
+#include <iostream> 
+using namespace std; 
+
+void reverse(string str) 
+{ 
+	for (int i = str.length() - 1; i >= 0; i--) 
+		cout << str[i]; 
+} 
+
+int main(void) 
+{ 
+	string str = ""GeeksforGeeks""; 
+
+	reverse(str); 
+
+	return (0); 
+}"
+Write a Program to Print All Permutations of a String Using Recursion,"// C++ Program to Print 
+// Permutaions of string 
+#include <iostream> 
+#include <string> 
+using namespace std; 
+
+void permute(string s, string answer) 
+{ 
+	if (s.length() == 0) { 
+		cout << answer << endl; 
+		return; 
+	} 
+	for (int i = 0; i < s.length(); i++) { 
+		char ch = s[i]; 
+		string left = s.substr(0, i); 
+		string right = s.substr(i + 1); 
+		string result = left + right; 
+		permute(result, answer + ch); 
+	} 
+} 
+
+int main() 
+{ 
+	string s = ""ABC""; 
+	string answer = """"; 
+
+	permute(s, answer); 
+	return 0; 
+}"
+Write a Program to Print All Permutations of a Given String in Lexicographically Sorted Order,"// C++ Program to Print all permutations 
+// Of a given string in lexicographically sorted order 
+#include <bits/stdc++.h> 
+using namespace std; 
+
+int compare(const void* a, const void* b) 
+{ 
+	return (*(char*)a - *(char*)b); 
+} 
+
+void swap(char* a, char* b) 
+{ 
+	char t = *a; 
+	*a = *b; 
+	*b = t; 
+} 
+
+int findCeil(char str[], char first, int l, int h) 
+{ 
+	int ceilIndex = l; 
+
+	for (int i = l + 1; i <= h; i++) 
+		if (str[i] > first && str[i] < str[ceilIndex]) 
+			ceilIndex = i; 
+
+	return ceilIndex; 
+} 
+
+void Permutations(char str[]) 
+{ 
+	int size = strlen(str); 
+
+	qsort(str, size, sizeof(str[0]), compare); 
+
+	bool isFinished = false; 
+	while (!isFinished) { 
+		cout << str << endl; 
+		int i; 
+
+		for (i = size - 2; i >= 0; --i) 
+			if (str[i] < str[i + 1]) 
+				break; 
+
+		if (i == -1) 
+			isFinished = true; 
+		else { 
+			int ceilIndex 
+				= findCeil(str, str[i], i + 1, size - 1); 
+			swap(&str[i], &str[ceilIndex]); 
+			qsort(str + i + 1, size - i - 1, sizeof(str[0]), 
+				compare); 
+		} 
+	} 
+} 
+
+int main() 
+{ 
+	char str[] = ""XYZ""; 
+	Permutations(str); 
+	return 0; 
+}"
+Write a Program to Remove Brackets From an Algebraic Expression,"// C++ Program to remove brackets from an algebraic exp 
+#include <iostream> 
+#include <string> 
+
+using namespace std; 
+
+string remove_brackets(string str) 
+{ 
+	string result = """"; 
+	for (char c : str) { 
+		if (c != '(' && c != ')') { 
+			result += c; 
+		} 
+	} 
+	return result; 
+} 
+
+int main() 
+{ 
+	string str = ""Geeks)(for)(geeks""; 
+
+	cout << ""Without brackets: "" << remove_brackets(str) 
+		<< endl; 
+
+	return 0; 
+}"
+"Program to Perform Insert, Delete, and Print Operations Singly Linked List","// C++ Program to perform insertion, deletion, and print 
+// operations in LL 
+#include <iostream> 
+
+using namespace std; 
+
+struct Node { 
+	int data; 
+	Node* next; 
+}; 
+
+Node* head = nullptr; 
+
+// Function to insert node in LL 
+void insert(int data) 
+{ 
+	Node* newNode = new Node(); 
+	newNode->data = data; 
+	newNode->next = head; 
+	head = newNode; 
+} 
+// function to delete node of LL 
+void deleteNode(int data) 
+{ 
+	Node *temp = head, *prev = nullptr; 
+	if (temp != nullptr && temp->data == data) { 
+		head = temp->next; 
+		delete temp; 
+		return; 
+	} 
+	while (temp != nullptr && temp->data != data) { 
+		prev = temp; 
+		temp = temp->next; 
+	} 
+	if (temp == nullptr) 
+		return; 
+	prev->next = temp->next; 
+	delete temp; 
+} 
+
+// function to print LL 
+void printList() 
+{ 
+	Node* temp = head; 
+	while (temp != nullptr) { 
+		cout << temp->data << "" ""; 
+		temp = temp->next; 
+	} 
+	cout << endl; 
+} 
+
+int main() 
+{ 
+	insert(1); 
+	insert(2); 
+	insert(3); 
+	insert(4); 
+	insert(5); 
+	cout << ""Linked List is \n""; 
+
+	printList(); 
+	deleteNode(3); 
+	cout << ""Linked List after deletion of 3: ""; 
+	printList(); 
+
+	return 0; 
+}"
+"Program to Perform Insert, Delete, and Print Operations Doubly Linked List","// C++ Program to implement insert, delete, and print 
+// operation in doubly linked list 
+#include <iostream> 
+
+using namespace std; 
+
+struct Node { 
+	int data; 
+	Node* next; 
+	Node* prev; 
+}; 
+
+class DoublyLinkedList { 
+private: 
+	Node* head; 
+
+public: 
+	DoublyLinkedList() 
+		: head(NULL) 
+	{ 
+	} 
+
+	void insertAtStart(int data) 
+	{ 
+		Node* newNode = new Node; 
+		newNode->data = data; 
+		newNode->next = head; 
+		newNode->prev = NULL; 
+
+		if (head != NULL) 
+			head->prev = newNode; 
+
+		head = newNode; 
+	} 
+
+	void deleteNode(int data) 
+	{ 
+		Node* temp = head; 
+		while (temp != NULL && temp->data != data) 
+			temp = temp->next; 
+
+		if (temp == NULL) 
+			return; 
+
+		if (temp->prev != NULL) 
+			temp->prev->next = temp->next; 
+		else
+			head = temp->next; 
+
+		if (temp->next != NULL) 
+			temp->next->prev = temp->prev; 
+
+		delete temp; 
+	} 
+
+	void printList() 
+	{ 
+		Node* temp = head; 
+		while (temp != NULL) { 
+			std::cout << temp->data << "" ""; 
+			temp = temp->next; 
+		} 
+		std::cout << std::endl; 
+	} 
+}; 
+
+int main() 
+{ 
+	DoublyLinkedList dll; 
+
+	dll.insertAtStart(1); 
+	dll.insertAtStart(2); 
+	dll.insertAtStart(3); 
+	dll.insertAtStart(4); 
+	dll.insertAtStart(5); 
+
+	std::cout << ""Original Doubly Linked List: ""; 
+	dll.printList(); 
+
+	dll.deleteNode(2); 
+
+	std::cout << ""Doubly Linked List after deletion: ""; 
+	dll.printList(); 
+
+	return 0; 
+}"
+"Program to Perform Insert, Delete, and Print Operations Circular Linked List","// C++ Program to implement insert, delete, and print in 
+// circular linked list 
+#include <iostream> 
+
+struct Node { 
+	int data; 
+	Node* next; 
+}; 
+
+class CircularLinkedList { 
+private: 
+	Node* head; 
+
+public: 
+	CircularLinkedList() 
+		: head(NULL) 
+	{ 
+	} 
+
+	void insertAtStart(int data) 
+	{ 
+		Node* newNode = new Node; 
+		newNode->data = data; 
+		newNode->next = head; 
+
+		if (head == NULL) { 
+			head = newNode; 
+			newNode->next = head; 
+		} 
+		else { 
+			Node* temp = head; 
+			while (temp->next != head) 
+				temp = temp->next; 
+			temp->next = newNode; 
+			head = newNode; 
+		} 
+	} 
+
+	void deleteNode(int data) 
+	{ 
+		Node* temp = head; 
+		if (temp == NULL) 
+			return; 
+
+		if (temp->next == head) { 
+			head = NULL; 
+			delete temp; 
+			return; 
+		} 
+
+		Node* prev = NULL; 
+		while (temp->next != head && temp->data != data) { 
+			prev = temp; 
+			temp = temp->next; 
+		} 
+
+		if (temp->data != data) 
+			return; 
+
+		prev->next = temp->next; 
+		if (temp == head) 
+			head = temp->next; 
+		delete temp; 
+	} 
+
+	void printList() 
+	{ 
+		Node* temp = head; 
+		while (temp->next != head) { 
+			std::cout << temp->data << "" ""; 
+			temp = temp->next; 
+		} 
+		std::cout << temp->data << std::endl; 
+	} 
+}; 
+
+int main() 
+{ 
+	CircularLinkedList cll; 
+
+	cll.insertAtStart(1); 
+	cll.insertAtStart(2); 
+	cll.insertAtStart(3); 
+	cll.insertAtStart(4); 
+	cll.insertAtStart(5); 
+
+	std::cout << ""Original Circular Linked list ""; 
+	cll.printList(); 
+
+	cll.deleteNode(2); 
+
+	std::cout << ""Circular Linked List after deletion ""; 
+	cll.printList(); 
+
+	return 0; 
+}"
+Program for Inorder Traversal in a Binary Tree,"// C++ program Inorder Traversal 
+#include <bits/stdc++.h> 
+using namespace std; 
+
+/* A binary tree node has data, pointer to left child 
+and a pointer to right child */
+
+struct Node { 
+	int data; 
+	struct Node *left, *right; 
+}; 
+
+// Utility function to create a new tree node 
+Node* newNode(int data) 
+{ 
+	Node* temp = new Node; 
+	temp->data = data; 
+	temp->left = temp->right = NULL; 
+	return temp; 
+} 
+
+/* Given a binary tree, print its nodes in inorder*/
+void printInorder(struct Node* node) 
+{ 
+	if (node == NULL) 
+		return; 
+
+	/* first recur on left child */
+	printInorder(node->left); 
+
+	/* then print the data of node */
+	cout << node->data << "" ""; 
+
+	/* now recur on right child */
+	printInorder(node->right); 
+} 
+
+int main() 
+{ 
+	struct Node* root = newNode(1); 
+	root->left = newNode(2); 
+	root->right = newNode(3); 
+	root->left->left = newNode(4); 
+	root->left->right = newNode(5); 
+
+	// Function call 
+	cout << ""Inorder traversal of binary tree is \n""; 
+	printInorder(root); 
+
+	return 0; 
+}"
+Program to Find All its Subsets From a Set of Positive Integers,"// C++ Program to find all subsets from the given set of 
+// positive integers 
+#include <bits/stdc++.h> 
+
+using namespace std; 
+
+void find_subset(vector<int>& A, vector<vector<int> >& ans, 
+				vector<int>& subset, int index) 
+{ 
+	ans.push_back(subset); 
+	for (int i = index; i < A.size(); i++) { 
+
+		subset.push_back(A[i]); 
+		find_subset(A, ans, subset, i + 1); 
+		subset.pop_back(); 
+	} 
+
+	return; 
+} 
+
+vector<vector<int> > subsets(vector<int>& A) 
+{ 
+	vector<int> subset; 
+	vector<vector<int> > ans; 
+
+	int index = 0; 
+	find_subset(A, ans, subset, index); 
+
+	return ans; 
+} 
+
+int main() 
+{ 
+	vector<int> array = { 1, 2, 3, 4, 5 }; 
+
+	vector<vector<int> > ans = subsets(array); 
+
+	for (int i = 0; i < ans.size(); i++) { 
+		for (int j = 0; j < ans[i].size(); j++) 
+			cout << ans[i][j] << "" ""; 
+		cout << endl; 
+	} 
+
+	return 0; 
+}"
+Program for Preorder Traversal in a Binary Tree,"// C++ program for preorder traversal 
+#include <bits/stdc++.h> 
+using namespace std; 
+
+/* A binary tree node has data, pointer to left child 
+and a pointer to right child */
+struct Node { 
+	int data; 
+	struct Node *left, *right; 
+}; 
+
+// Utility function to create a new tree node 
+Node* newNode(int data) 
+{ 
+	Node* temp = new Node; 
+	temp->data = data; 
+	temp->left = temp->right = NULL; 
+	return temp; 
+} 
+
+/* Given a binary tree, print its nodes in preorder*/
+void printPreorder(struct Node* node) 
+{ 
+	if (node == NULL) 
+		return; 
+
+	/* first print data of node */
+	cout << node->data << "" ""; 
+
+	/* then recur on left subtree */
+	printPreorder(node->left); 
+
+	/* now recur on right subtree */
+	printPreorder(node->right); 
+} 
+
+int main() 
+{ 
+	struct Node* root = newNode(1); 
+	root->left = newNode(2); 
+	root->right = newNode(3); 
+	root->left->left = newNode(4); 
+	root->left->right = newNode(5); 
+
+	// Function call 
+	cout << ""Preorder traversal of binary tree is \n""; 
+	printPreorder(root); 
+
+	return 0; 
+}"
+Program for Postorder Traversal in a Binary Tree,"// C++ program for post order traversal 
+#include <bits/stdc++.h> 
+using namespace std; 
+
+/* A binary tree node has data, pointer to left child 
+and a pointer to right child */
+struct Node { 
+	int data; 
+	struct Node *left, *right; 
+}; 
+
+// Utility function to create a new tree node 
+Node* newNode(int data) 
+{ 
+	Node* temp = new Node; 
+	temp->data = data; 
+	temp->left = temp->right = NULL; 
+	return temp; 
+} 
+
+/* Given a binary tree, print its nodes according to the 
+""bottom-up"" postorder traversal. */
+void printPostorder(struct Node* node) 
+{ 
+	if (node == NULL) 
+		return; 
+
+	// first recur on left subtree 
+	printPostorder(node->left); 
+
+	// then recur on right subtree 
+	printPostorder(node->right); 
+
+	// now deal with the node 
+	cout << node->data << "" ""; 
+} 
+
+int main() 
+{ 
+	struct Node* root = newNode(1); 
+	root->left = newNode(2); 
+	root->right = newNode(3); 
+	root->left->left = newNode(4); 
+	root->left->right = newNode(5); 
+
+	// Function call 
+	cout << ""Postorder traversal of binary tree is \n""; 
+	printPostorder(root); 
+
+	return 0; 
+}"
+Program for Level-Order Traversal in a Binary Tree,"// C++ program for post order traversal 
+#include <bits/stdc++.h> 
+using namespace std; 
+
+/* A binary tree node has data, pointer to left child 
+and a pointer to right child */
+struct Node { 
+	int data; 
+	struct Node *left, *right; 
+}; 
+
+// Utility function to create a new tree node 
+Node* newNode(int data) 
+{ 
+	Node* temp = new Node; 
+	temp->data = data; 
+	temp->left = temp->right = NULL; 
+	return temp; 
+} 
+
+/* Given a binary tree, print its nodes according to the 
+""bottom-up"" postorder traversal. */
+void printLevelOrder(struct Node* node) 
+{ 
+	if (node == NULL) 
+		return; 
+	queue<struct Node*> q; 
+	while (node) { 
+		if (node->left) { 
+			q.push(node->left); 
+		} 
+		if (node->right) { 
+			q.push(node->right); 
+		} 
+		cout << node->data << "" ""; 
+		node = q.front(); 
+		q.pop(); 
+	} 
+} 
+
+int main() 
+{ 
+	struct Node* root = newNode(1); 
+	root->left = newNode(2); 
+	root->right = newNode(3); 
+	root->left->left = newNode(4); 
+	root->left->right = newNode(5); 
+
+	// Function call 
+	cout << ""Levelorder traversal of binary tree is \n""; 
+	printLevelOrder(root); 
+
+	return 0; 
+}"
+Write a Program for the Top View of a Binary Tree,"// C++ program for top view of a binary tree 
+#include <bits/stdc++.h> 
+using namespace std; 
+
+// node data type 
+struct Node { 
+	Node* left; 
+	Node* right; 
+	int hd; 
+	int data; 
+}; 
+
+// utility function to create new node 
+Node* newNode(int key) 
+{ 
+	Node* node = new Node(); 
+	node->left = node->right = NULL; 
+	node->data = key; 
+	return node; 
+} 
+
+// function to print top view of a binary tree 
+void topView(Node* root) 
+{ 
+	if (root == NULL) { 
+		return; 
+	} 
+	queue<Node*> q; 
+	map<int, int> m; 
+	int hd = 0; 
+	root->hd = hd; 
+
+	q.push(root); 
+
+	while (q.size()) { 
+		hd = root->hd; 
+
+		if (m.count(hd) == 0) 
+			m[hd] = root->data; 
+		if (root->left) { 
+			root->left->hd = hd - 1; 
+			q.push(root->left); 
+		} 
+		if (root->right) { 
+			root->right->hd = hd + 1; 
+			q.push(root->right); 
+		} 
+		q.pop(); 
+		root = q.front(); 
+	} 
+
+	// printing top view 
+	for (auto i = m.begin(); i != m.end(); i++) { 
+		cout << i->second << "" ""; 
+	} 
+} 
+
+// Driver code 
+int main() 
+{ 
+	// new binary tree 
+	Node* root = newNode(1); 
+	root->left = newNode(2); 
+	root->right = newNode(3); 
+	root->left->left = newNode(4); 
+	root->right->right = newNode(5); 
+
+	topView(root); 
+	return 0; 
+}"
+Write a Program to Print the Bottom View of a Binary Tree,"// C++ program for bottom view of a binary tree 
+#include <bits/stdc++.h> 
+using namespace std; 
+
+// node data type 
+struct Node { 
+	Node* left; 
+	Node* right; 
+	int data; 
+	int hd; 
+}; 
+
+// utility function for new node 
+Node* newNode(int key) 
+{ 
+	Node* node = new Node(); 
+	node->data = key; 
+	node->left = node->right = NULL; 
+	node->hd = 0; 
+
+	return node; 
+} 
+
+// function to print bottom view 
+void bottomView(Node* root) 
+{ 
+	if (root == NULL) 
+		return; 
+
+	queue<Node*> q; 
+	map<int, int> m; 
+
+	int hd = 0; 
+
+	root->hd = hd; 
+	q.push(root); 
+
+	while (!q.empty()) { 
+		Node* temp = q.front(); 
+		q.pop(); 
+
+		hd = temp->hd; 
+
+		m[hd] = temp->data; 
+
+		if (temp->left != NULL) { 
+			temp->left->hd = hd - 1; 
+			q.push(temp->left); 
+		} 
+
+		if (temp->right != NULL) { 
+			temp->right->hd = hd + 1; 
+			q.push(temp->right); 
+		} 
+	} 
+
+	// printing top view 
+	for (auto i = m.begin(); i != m.end(); ++i) 
+		cout << i->second << "" ""; 
+} 
+
+// Driver Code 
+int main() 
+{ 
+	Node* root = newNode(1); 
+	root->left = newNode(2); 
+	root->right = newNode(3); 
+	root->left->left = newNode(4); 
+	root->right->right = newNode(5); 
+
+	bottomView(root); 
+	return 0; 
+}"
+Write a Program to Print the Left View of a Binary Tree,"// C++ program to print left view of a binary tree 
+#include <bits/stdc++.h> 
+using namespace std; 
+
+// node datatype 
+struct Node { 
+	Node* left; 
+	Node* right; 
+	int data; 
+}; 
+
+// utility function to create a new node 
+Node* newNode(int key) 
+{ 
+	Node* node = new Node; 
+	node->data = key; 
+	node->left = node->right = NULL; 
+	return node; 
+} 
+
+// function to print left view 
+void leftView(Node* root) 
+{ 
+	if (!root) { 
+		return; 
+	} 
+
+	queue<Node*> q; 
+	q.push(root); 
+
+	while (!q.empty()) { 
+		int n = q.size(); 
+
+		for (int i = 1; i <= n; i++) { 
+			Node* temp = q.front(); 
+			q.pop(); 
+
+			if (i == 1) 
+				cout << temp->data << "" ""; 
+
+			if (temp->left != NULL) 
+				q.push(temp->left); 
+
+			if (temp->right != NULL) 
+				q.push(temp->right); 
+		} 
+	} 
+} 
+
+// Driver code 
+int main() 
+{ 
+
+	Node* root = newNode(1); 
+	root->left = newNode(2); 
+	root->right = newNode(3); 
+	root->left->left = newNode(4); 
+	root->right->right = newNode(5); 
+
+	leftView(root); 
+}"
+ Write a Program to Print the Right View of the Binary Tree,"// C++ program to print the right view of a binary tree 
+#include <bits/stdc++.h> 
+using namespace std; 
+
+// node data type 
+struct Node { 
+	Node* left; 
+	Node* right; 
+	int data; 
+}; 
+
+// utility function to create new node 
+Node* newNode(int key) 
+{ 
+	Node* node = new Node; 
+	node->data = key; 
+	node->left = node->right = NULL; 
+	return node; 
+} 
+
+// function to print right view of a binary tree 
+void rightView(Node* root) 
+{ 
+	if (root == NULL) { 
+		return; 
+	} 
+
+	queue<Node*> q; 
+	q.push(root); 
+
+	while (!q.empty()) { 
+
+		int n = q.size(); 
+
+		while (n--) { 
+
+			Node* x = q.front(); 
+			q.pop(); 
+
+			if (n == 0) { 
+				cout << x->data << "" ""; 
+			} 
+			if (x->left) { 
+				q.push(x->left); 
+			} 
+			if (x->right) { 
+				q.push(x->right); 
+			} 
+		} 
+	} 
+} 
+
+// Driver code 
+int main() 
+{ 
+
+	Node* root = newNode(1); 
+	root->left = newNode(2); 
+	root->right = newNode(3); 
+	root->left->left = newNode(4); 
+	root->right->right = newNode(5); 
+
+	rightView(root); 
+}"
+Write a Program for the Conversion of Infix Expression to Postfix Expression,"// C++ program for infix expression to postfix expression 
+// conversion 
+#include <bits/stdc++.h> 
+using namespace std; 
+
+// infix to postfix conversion 
+// supported operators => + - * / 
+string infixToPostfix(string& expression) 
+{ 
+	// string to store postfix expression 
+	string postfix; 
+	// operator stack 
+	stack<char> ope_stack; 
+	// operator precedence map 
+	unordered_map<char, int> pre = { { '+', 1 }, 
+									{ '-', 1 }, 
+									{ '*', 2 }, 
+									{ '/', 2 }, 
+									{ '(', 0 } }; 
+
+	int length = expression.length(); 
+
+	for (int i = 0; i < length; i++) { 
+		char c = expression[i]; 
+		// checking operands 
+		if ((c >= 92 && c <= 122) || (c >= 48 && c <= 57)) { 
+			postfix.push_back(c); 
+		} 
+		// checking braces 
+		else if (c == '(') { 
+			ope_stack.push(c); 
+		} 
+		else if (c == ')') { 
+			while (ope_stack.top() != '(') { 
+				postfix.push_back(ope_stack.top()); 
+				ope_stack.pop(); 
+			} 
+			ope_stack.pop(); 
+		} 
+		// checking operators 
+		else { 
+			while (!ope_stack.empty() 
+				&& pre.at(c) < pre.at(ope_stack.top())) { 
+				postfix.push_back(ope_stack.top()); 
+				ope_stack.pop(); 
+			} 
+			ope_stack.push(c); 
+		} 
+	} 
+
+	// popping whole stack at the end 
+	while (!ope_stack.empty()) { 
+		postfix.push_back(ope_stack.top()); 
+		ope_stack.pop(); 
+	} 
+
+	return postfix; 
+} 
+
+// driver code 
+int main() 
+{ 
+	string s = ""a*b+(c-d)""; 
+	cout << infixToPostfix(s); 
+
+	return 0; 
+}"

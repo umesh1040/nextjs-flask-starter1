@@ -1,0 +1,413 @@
+Question,Answer
+What is full form of CSV?,CSV (Comma Separated Values)
+ What is CSV file? What are its characteristics?,"CSV (Comma Separated Values) is a file format for data storage which looks like a text file.
+It is used to store tabular data, such as a spreadsheet or database.
+The information is organized with one record on each line
+Each field is separated by comma.
+You can choose a different delimiter character such as ‘ ‘:’ , ‘;’ , ‘|’.
+In CSV files space-characters adjacent to commas are ignored"
+When do we use CSV file?,"When data has a strict tabular structure
+To transfer large data between programs
+To import and export data"
+What are the Advantages of CSV files?,"CSV is faster to handle
+CSV is smaller in size and is easy to generate
+CSV is human readable and easy to edit manually
+CSV is simple to implement and parse
+CSV is processed by almost all existing applications"
+ What are the Disadvantages of CSV files?,"There is no standard way to represent binary data
+There is no distinction between text and numeric values
+There is poor support of special characters and control characters
+CSV allows to move most basic data only. Complex configurations cannot be imported and exported this way"
+Which module is used to operate on CSV file?, To read and write in CSV files we need to import csv module.
+What is Python? List some popular applications of Python in the world of technology.,"Python is a widely-used general-purpose, high-level programming language. It was created by Guido van Rossum in 1991 and further developed by the Python Software Foundation. It was designed with an emphasis on code readability, and its syntax allows programmers to express their concepts in fewer lines of code.
+It is used for:
+
+System Scripting
+Web Development
+Game Development
+Software Development
+Complex Mathematics"
+What are the benefits of using Python language as a tool in the present scenario?,"The following are the benefits of using Python language:
+
+Object-Oriented Language
+High-Level Language
+Dynamically Typed language
+Extensive support Libraries
+Presence of third-party modules
+Open source and community development
+Portable and Interactive
+Portable across Operating systems"
+How are arguments passed by value or by reference in Python?,"Everything in Python is an object and all variables hold references to the objects. The reference values are according to the functions; as a result, you cannot change the value of the references. However, you can change the objects if it is mutable."
+What does the ‘#’ symbol do in Python?,‘#’ is used to comment on everything that comes after on the line.
+What is the difference between a Mutable datatype and an Immutable data type?,"Mutable data types can be edited i.e., they can change at runtime. Eg – List, Dictionary, etc.
+Immutable data types can not be edited i.e., they can not change at runtime. Eg – String, Tuple, etc."
+ What is the difference between a Set and Dictionary?,"The set is an unordered collection of data types that is iterable, mutable and has no duplicate elements.
+A dictionary in Python is an ordered collection of data values, used to store data values like a map"
+What is List Comprehension? Give an Example.,"List comprehension is a syntax construction to ease the creation of a list based on existing iterable.
+
+For Example:
+
+my_list = [i for i in range(1, 10)]"
+What is a lambda function?,"A lambda function is an anonymous function. This function can have any number of parameters but, can have just one statement. For Example:
+
+a = lambda x, y : x*y
+print(a(7, 19))"
+What is a pass in Python?,"Pass means performing no operation or in other words, it is a placeholder in the compound statement, where there should be a blank left and nothing has to be written there."
+What is the difference between / and // in Python?,"/ represents floor division whereas // represents precise division. For Example:
+
+5//2 = 2
+5/2 = 2.5"
+How is Exceptional handling done in Python?,"There are 3 main keywords i.e. try, except, and finally which are used to catch exceptions and handle the recovering mechanism accordingly. Try is the block of a code that is monitored for errors. Except block gets executed when an error occurs.
+
+The beauty of the final block is to execute the code after trying for an error. This block gets executed irrespective of whether an error occurred or not. Finally, block is used to do the required cleanup activities of objects/variables."
+What is swapcase function in Python?,"It is a string’s function that converts all uppercase characters into lowercase and vice versa. It is used to alter the existing case of the string. This method creates a copy of the string which contains all the characters in the swap case. For Example:
+
+string = ""GeeksforGeeks""
+string.swapcase() ---> ""gEEKSFORgEEKS"""
+Difference between for loop and while loop in Python,"The “for” Loop is generally used to iterate through the elements of various collection types such as List, Tuple, Set, and Dictionary. Developers use a “for” loop where they have both the conditions start and the end. Whereas, the “while” loop is the actual looping feature that is used in any other programming language. Programmers use a Python while loop where they just have the end conditions."
+Can we Pass a function as an argument in Python?,"Yes, Several arguments can be passed to a function, including objects, variables (of the same or distinct data types), and functions. Functions can be passed as parameters to other functions because they are objects. Higher-order functions are functions that can take other functions as arguments."
+What are *args and *kwargs?,"To pass a variable number of arguments to a function in Python, use the special syntax *args and **kwargs in the function specification. It is used to pass a variable-length, keyword-free argument list. By using the *, the variable we associate with the * becomes iterable, allowing you to do operations on it such as iterating over it and using higher-order operations like map and filter."
+What is PEP 8 and why is it important?,"PEP stands for Python Enhancement Proposal. A PEP is an official design document providing information to the Python community, or describing a new feature for Python or its processes. PEP 8 is especially important since it documents the style guidelines for Python Code. Apparently contributing to the Python open-source community requires you to follow these style guidelines sincerely and strictly."
+What is Scope in Python?,"Every object in Python functions within a scope. A scope is a block of code where an object in Python remains relevant. Namespaces uniquely identify all the objects inside a program. However, these namespaces also have a scope defined for them where you could use their objects without any prefix. A few examples of scope created during code execution in Python are as follows:
+
+A local scope refers to the local objects available in the current function.
+A global scope refers to the objects available throughout the code execution since their inception.
+A module-level scope refers to the global objects of the current module accessible in the program.
+An outermost scope refers to all the built-in names callable in the program. The objects in this scope are searched last to find the name referenced"
+How do you floor a number in Python?,"The Python math module includes a method that can be used to calculate the floor of a number. 
+
+floor() method in Python returns the floor of x i.e., the largest integer not greater than x. 
+Also, The method ceil(x) in Python returns a ceiling value of x i.e., the smallest integer greater than or equal to x."
+What is the difference between xrange and range functions?,"range() and xrange() are two functions that could be used to iterate a certain number of times in for loops in Python. In Python 3, there is no xrange, but the range function behaves like xrange in Python 2.
+
+range() – This returns a list of numbers created using the range() function.
+xrange() – This function returns the generator object that can be used to display numbers only by looping. The only particular range is displayed on demand and hence called lazy evaluation."
+What is Dictionary Comprehension? Give an Example,"Dictionary Comprehension is a syntax construction to ease the creation of a dictionary based on the existing iterable.
+
+For Example: my_dict = {i:1+7 for i in range(1, 10)}
+
+26. Is Tuple Comprehension? If yes, how, and if not why?
+(i for i in (1, 2, 3))
+
+
+Tuple comprehension is not possible in Python because it will end up in a generator, not a tuple comprehension."
+Differentiate between List and Tuple?,"Let’s analyze the differences between List and Tuple:
+
+List
+
+Lists are Mutable datatype.
+Lists consume more memory
+The list is better for performing operations, such as insertion and deletion.
+The implication of iterations is Time-consuming
+Tuple
+
+Tuples are Immutable datatype.
+Tuple consumes less memory as compared to the list
+A Tuple data type is appropriate for accessing the elements
+The implication of iterations is comparatively Faster"
+What is the difference between a shallow copy and a deep copy?,"Shallow copy is used when a new instance type gets created and it keeps values that are copied whereas deep copy stores values that are already copied.
+
+A shallow copy has faster program execution whereas a deep coy makes it slow."
+Which sorting technique is used by sort() and sorted() functions of python?,"Python uses the Tim Sort algorithm for sorting. It’s a stable sorting whose worst case is O(N log N). It’s a hybrid sorting algorithm, derived from merge sort and insertion sort, designed to perform well on many kinds of real-world data"
+ What are Decorators?,Decorators are a very powerful and useful tool in Python as they are the specific change that we make in Python syntax to alter functions easily
+How do you debug a Python program?,"By using this command we can debug a Python program:
+
+$ python -m pdb python-script.py"
+ What are Iterators in Python?,"In Python, iterators are used to iterate a group of elements, containers like a list. Iterators are collections of items, and they can be a list, tuples, or a dictionary. Python iterator implements __itr__ and the next() method to iterate the stored elements. We generally use loops to iterate over the collections (list, tuple) in Python."
+What are Generators in Python?,"In Python, the generator is a way that specifies how to implement iterators. It is a normal function except that it yields expression in the function. It does not implement __itr__ and next() method and reduces other overheads as well.
+
+If a function contains at least a yield statement, it becomes a generator. The yield keyword pauses the current execution by saving its states and then resumes from the same when required."
+ Does Python supports multiple Inheritance?,"Python does support multiple inheritances, unlike Java. Multiple inheritances mean that a class can be derived from more than one parent class."
+What is Polymorphism in Python?,"Polymorphism means the ability to take multiple forms. So, for instance, if the parent class has a method named ABC then the child class also can have a method with the same name ABC having its own parameters and variables. Python allows polymorphism."
+Define encapsulation in Python?,Encapsulation means binding the code and the data together. A Python class is an example of encapsulation.
+How do you do data abstraction in Python?,Data Abstraction is providing only the required details and hides the implementation from the world. It can be achieved in Python by using interfaces and abstract classes.
+How is memory management done in Python?,"Python uses its private heap space to manage the memory. Basically, all the objects and data structures are stored in the private heap space. Even the programmer can not access this private space as the interpreter takes care of this space. Python also has an inbuilt garbage collector, which recycles all the unused memory and frees the memory and makes it available to the heap space."
+How to delete a file using Python?,"We can delete a file using Python by following approaches:
+
+os.remove()
+os.unlink()"
+What is slicing in Python?,"Python Slicing is a string operation for extracting a part of the string, or some part of a list. With this operator, one can specify where to start the slicing, where to end, and specify the step. List slicing returns a new list from the existing list.
+
+Syntax: Lst[ Initial : End : IndexJump ]"
+What is a namespace in Python?,A namespace is a naming system used to make sure that names are unique to avoid naming conflicts.
+ What is PIP?,PIP is an acronym for Python Installer Package which provides a seamless interface to install various Python modules. It is a command-line tool that can search for packages over the internet and install them without any user interaction.
+What is a zip function?,"Python zip() function returns a zip object, which maps a similar index of multiple containers. It takes an iterable, converts it into an iterator and aggregates the elements based on iterables passed. It returns an iterator of tuples"
+What are Pickling and Unpickling?,"The Pickle module accepts any Python object and converts it into a string representation and dumps it into a file by using the dump function, this process is called pickling. While the process of retrieving original Python objects from the stored string representation is called unpickling."
+What is monkey patching in Python?,"In Python, the term monkey patch only refers to dynamic modifications of a class or module at run-time.
+
+# g.py
+class GeeksClass:
+    def function(self):
+        print ""function()""
+
+import m
+def monkey_function(self):
+    print ""monkey_function()""
+ 
+m.GeeksClass.function = monkey_function
+obj = m.GeeksClass()
+obj.function()"
+What is __init__() in Python?,"Equivalent to constructors in OOP terminology, __init__ is a reserved method in Python classes. The __init__ method is called automatically whenever a new object is initiated. This method allocates memory to the new object as soon as it is created. This method can also be used to initialize variables."
+ Write a code to display the current time?,"currenttime= time.localtime(time.time())
+print (“Current time is”, currenttime)"
+What are Access Specifiers in Python?,"Python uses the ‘_’ symbol to determine the access control for a specific data member or a member function of a class. A Class in Python has three types of Python access modifiers:
+
+Public Access Modifier: The members of a class that are declared public are easily accessible from any part of the program. All data members and member functions of a class are public by default. 
+Protected Access Modifier: The members of a class that are declared protected are only accessible to a class derived from it. All data members of a class are declared protected by adding a single underscore ‘_’ symbol before the data members of that class. 
+Private Access Modifier: The members of a class that are declared private are accessible within the class only, the private access modifier is the most secure access modifier. Data members of a class are declared private by adding a double underscore ‘__’ symbol before the data member of that class"
+What are unit tests in Python?,Unit Testing is the first level of software testing where the smallest testable parts of the software are tested. This is used to validate that each unit of the software performs as designed. The unit test framework is Python’s xUnit style framework. The White Box Testing method is used for Unit testing.
+Python Global Interpreter Lock (GIL)?,"Python Global Interpreter Lock (GIL) is a type of process lock that is used by Python whenever it deals with processes. Generally, Python only uses only one thread to execute the set of written statements. The performance of the single-threaded process and the multi-threaded process will be the same in Python and this is because of GIL in Python. We can not achieve multithreading in Python because we have a global interpreter lock that restricts the threads and works as a single thread."
+What are Function Annotations in Python?,"Function Annotation is a feature that allows you to add metadata to function parameters and return values. This way you can specify the input type of the function parameters and the return type of the value the function returns.
+
+Function annotations are arbitrary Python expressions that are associated with various parts of functions. These expressions are evaluated at compile time and have no life in Python’s runtime environment. Python does not attach any meaning to these annotations. They take life when interpreted by third-party libraries, for example, mypy."
+What are Exception Groups in Python?,"The latest feature of Python 3.11, Exception Groups. The ExceptionGroup can be handled using a new except* syntax. The * symbol indicates that multiple exceptions can be handled by each except* clause.
+
+ExceptionGroup is a collection/group of different kinds of Exception. Without creating Multiple Exceptions we can group together different Exceptions which we can later fetch one by one whenever necessary, the order in which the Exceptions are stored in the Exception Group doesn’t matter while calling them.
+
+try: 
+raise ExceptionGroup('Example ExceptionGroup', ( 
+TypeError('Example TypeError'), 
+ValueError('Example ValueError'), 
+KeyError('Example KeyError'), 
+AttributeError('Example AttributeError') 
+)) 
+except* TypeError: 
+... 
+except* ValueError as e: 
+... 
+except* (KeyError, AttributeError) as e: 
+..."
+What is Python Switch Statement ,"From version 3.10 upward, Python has implemented a switch case feature called “structural pattern matching”. You can implement this feature with the match and case keywords. Note that the underscore symbol is what you use to define a default case for the switch statement in Python.
+
+Note: Before Python 3.10 Python doesn’t support match Statements.
+
+match term: 
+   case pattern-1: 
+   action-1
+   case pattern-2: 
+   action-2
+   case pattern-3: 
+   action-3
+   case _: 
+   action-default"
+What is Walrus Operator?,"The Walrus Operator allows you to assign a value to a variable within an expression. This can be useful when you need to use a value multiple times in a loop, but don’t want to repeat the calculation.
+
+The Walrus Operator is represented by the `:=` syntax and can be used in a variety of contexts including while loops and if statements.
+
+Note: Python versions before 3.8 doesn’t support Walrus Operator.
+
+names = [""Jacob"", ""Joe"", ""Jim""] 
+  
+if (name := input(""Enter a name: "")) in names: 
+    print(f""Hello, {name}!"") 
+else: 
+    print(""Name not found."")"
+What is Python? List some popular applications of Python in the world of technology.,"Python is a widely-used general-purpose, high-level programming language. It was created by Guido van Rossum in 1991 and further developed by the Python Software Foundation. It was designed with an emphasis on code readability, and its syntax allows programmers to express their concepts in fewer lines of code.
+It is used for:
+
+System Scripting
+Web Development
+Game Development
+Software Development
+Complex Mathematics"
+What are the benefits of using Python language as a tool in the present scenario?,"The following are the benefits of using Python language:
+
+Object-Oriented Language
+High-Level Language
+Dynamically Typed language
+Extensive support Libraries
+Presence of third-party modules
+Open source and community development
+Portable and Interactive
+Portable across Operating systems"
+ Is Python a compiled language or an interpreted language?,"Actually, Python is a partially compiled language and partially interpreted language. The compilation part is done first when we execute our code and this will generate byte code internally this byte code gets converted by the Python virtual machine(p.v.m) according to the underlying platform(machine+operating system)."
+What does the ‘#’ symbol do in Python?,‘#’ is used to comment on everything that comes after on the line.
+What is the difference between a Mutable datatype and an Immutable data type?,"Mutable data types can be edited i.e., they can change at runtime. Eg – List, Dictionary, etc.
+Immutable data types can not be edited i.e., they can not change at runtime. Eg – String, Tuple, etc."
+How are arguments passed by value or by reference in Python?,"Everything in Python is an object and all variables hold references to the objects. The reference values are according to the functions; as a result, you cannot change the value of the references. However, you can change the objects if it is mutable."
+What is the difference between a Set and Dictionary?,"The set is an unordered collection of data types that is iterable, mutable and has no duplicate elements.
+A dictionary in Python is an ordered collection of data values, used to store data values like a map."
+What is List Comprehension? Give an Example.,"List comprehension is a syntax construction to ease the creation of a list based on existing iterable.
+
+For Example:
+
+my_list = [i for i in range(1, 10)]"
+What is a lambda function?,"A lambda function is an anonymous function. This function can have any number of parameters but, can have just one statement. For Example:
+
+a = lambda x, y : x*y
+print(a(7, 19))"
+What is a pass in Python?,"Pass means performing no operation or in other words, it is a placeholder in the compound statement, where there should be a blank left and nothing has to be written there."
+ What is the difference between / and // in Python?,"/ represents floor division whereas // represents precise division. For Example:
+
+5//2 = 2
+5/2 = 2.5"
+How is Exceptional handling done in Python?,"There are 3 main keywords i.e. try, except, and finally which are used to catch exceptions and handle the recovering mechanism accordingly. Try is the block of a code that is monitored for errors. Except block gets executed when an error occurs.
+
+The beauty of the final block is to execute the code after trying for an error. This block gets executed irrespective of whether an error occurred or not. Finally, block is used to do the required cleanup activities of objects/variables."
+What is swapcase function in Python?,"It is a string’s function that converts all uppercase characters into lowercase and vice versa. It is used to alter the existing case of the string. This method creates a copy of the string which contains all the characters in the swap case. For Example:
+
+string = ""GeeksforGeeks""
+string.swapcase() ---> ""gEEKSFORgEEKS"""
+Difference between for loop and while loop in Python,"The “for” Loop is generally used to iterate through the elements of various collection types such as List, Tuple, Set, and Dictionary. Developers use a “for” loop where they have both the conditions start and the end. Whereas, the “while” loop is the actual looping feature that is used in any other programming language. Programmers use a Python while loop where they just have the end conditions."
+Can we Pass a function as an argument in Python?,"Yes, Several arguments can be passed to a function, including objects, variables (of the same or distinct data types), and functions. Functions can be passed as parameters to other functions because they are objects. Higher-order functions are functions that can take other functions as arguments.
+"
+What is pep 8?,PEP in Python stands for Python Enhancement Proposal. It comprises a collection of guidelines that outline the optimal approach for crafting and structuring Python code to ensure the utmost clarity and legibility
+ What are the Key features of Python?,"Python is an interpreted language, so it doesn’t need to be compiled before execution, unlike languages such as C.
+Python is dynamically typed, so there is no need to declare a variable with the data type. Python Interpreter will identify the data type on the basis of the value of the variable."
+What is the difference between modules and libraries ?,"In Python, modules are like standalone files that house specific code components such as functions and variables. On the other hand, libraries are essentially vast collections of modules, and they come with pre-built functions and tools tailored for specific tasks or domains. These libraries not only simplify the development process but also enhance Python’s capabilities by providing readily available solutions for various programming challenges."
+What are python namespaces?,"A Python namespace ensures that the names assigned to objects within a program are unique and can be used without conflict. In Python, namespaces are implemented as dictionaries where the object’s name serves as the key and the object itself serves as the value.
+
+Let’s examine some examples of namespaces:
+
+The Local Namespace is specific to a function and contains the names defined within that function. It is created temporarily when the function is called and is cleared once the function finishes executing.
+The Global Namespace includes names from imported modules or packages that are used in the current project. It is created when the package is imported into the script and remains accessible throughout the script’s execution.
+The Built-in Namespace comprises the built-in functions provided by Python’s core, as well as specific names dedicated to various types of exceptions"
+ What is __init__ in Python?,"In Python classes, the reserved method init serves a similar purpose as constructors in object-oriented programming (OOP) terminology. When a new object is created, the init method is automatically called, initializing the object and allocating memory for it. This method can also be utilized to set initial values for variables.
+
+Below is an example:
+
+1
+2
+3
+4
+5
+6
+7
+class Human:
+    def __init__(self, age):
+        self.age = age
+    def say(self):
+        print('Hello, my age is', self.age)
+h = Human(22)
+h.say()
+Output:
+
+Hello, my age is 22"
+What is the difference between Python Arrays and lists?,"Criteria	Python Arrays 	Python Lists
+Definition	Arrays are data structures that hold fixed-size elements of the same type.	Lists are versatile data structures that can hold elements of different types and sizes.
+Mutable	Arrays are mutable, meaning their elements can be modified once created.	Lists are mutable, allowing for modification of elements after creation.
+Size	Array size is fixed upon creation and cannot be changed.	Lists can dynamically resize to accommodate new elements or remove existing elements.
+Homogeneous	Arrays store elements of the same data type, ensuring homogeneity.	Lists can store elements of different data types, allowing heterogeneity.
+Access	Elements in an array can be accessed using indexing.	Elements in a list can be accessed using indexing.
+Operations	Arrays support mathematical and logical operations on their elements efficiently.	Lists provide a wide range of built-in methods and operations for manipulation and data handling.
+Memory	Arrays consume less memory compared to lists.	Lists consume more memory due to their flexibility and dynamic resizing."
+. What are the common built-in data types in Python?,"Immutable data types:
+
+Number
+String
+Tuple
+Mutable data types:
+
+List
+Dictionary
+set"
+Print the file path of imported modules,"import os;
+import socket; 
+print(os)
+print(socket)"
+ Checking whether the two words are anagrams or not,"from collections import Counter
+def is_anagram(str1, str2):
+return Counter(str1) == Counter(str2)
+print(is_anagram('majix', 'magic'))  
+print(is_anagram('majix', 'xijam'))"
+Find the most frequent value in a list,"test = [1, 2, 3, 9, 2, 7, 3, 5, 9, 9, 9]
+print(max(set(test), key = test.count))"
+Check the memory usage of  an object,"import sys
+x = 10
+print(sys.getsizeof(x))"
+How can we create a constructor in Python programming?,"class Student:  
+def __init__(self,name,id):  
+self.id = id;  
+self.name = name;  
+def display (self):  
+print(""ID: %d nName: %s""%(self.id,self.name))  
+stu1 =Student(""nirvi"",105)  
+stu2 = Student(""tanvi"",106)   
+#accessing display() method to print employee 1 information     
+stu1.display();   
+#accessing display() method to print employee 2 information  
+stu2.display();"
+Define Constructor in Python?,"Constructor is a special type of method with a block of code to initialize the state of instance members of the class. A constructor is called only when the instance of the object is created. It is also used to verify that they are sufficient resources for objects to perform a specific task.
+
+There are two types of constructors in Python, and they are:
+
+Parameterized constructor
+Non-parameterized constructor"
+ow can we create an empty class in Python?,"Empty class in Python is defined as a class that does not contain any code defined within the block. It can be created using pass keywords and object to this class can be created outside the class itself.
+
+Example:
+
+class x:
+&nbsp; pass
+obj=x()
+obj.id=""123""
+print(""Id = "",obj.id)"
+Does Python make use of access specifiers?,"Python does not make use of access specifiers and also it does not provide a way to access an instance variable. Python introduced a concept of prefixing the name of the method, function, or variable by using a double or single underscore to act like the behavior of private and protected access specifiers."
+ Does multiple inheritances are supported in Python?,"Multiple inheritances are supported in python. It is a process that provides flexibility to inherit multiple base classes in a child class. 
+
+An example of multiple inheritances in Python is as follows:
+
+class Calculus:  
+def Sum(self,a,b):  
+return a+b;  
+class Calculus1:  
+def Mul(self,a,b):  
+return a*b;  
+class Derived(Calculus,Calculus1):  
+def Div(self,a,b):  
+return a/b;  
+d = Derived()  
+print(d.Sum(10,30))  
+print(d.Mul(10,30))  
+print(d.Div(10,30)) 
+"
+efine what is “Method” in Python programming?,The Method is defined as the function associated with a particular object. The method which we define should not be unique as a class instance. Any type of object can have methods.
+What is the syntax for creating an instance of a class in Python?,"The syntax for creating an instance of a class is as follows:
+
+<object-name> = <class-name>(<arguments>)"
+How to create a class in Python?,"In Python programming, the class is created using a class keyword. The syntax for creating a class is as follows:
+
+class ClassName:
+#code (statement-suite)
+Example of creating a class in Python.
+
+Output: 
+
+XYZ"
+ What is a class in Python?,Class is defined as a logical entity that is a huge collection of objects and it also contains both methods and attributes.  
+What are the OOP's concepts available in Python?,"Python is also an object-oriented programming language like other programming languages. It also contains different OOP's concepts, and they are 
+
+Object
+Class
+Method
+Encapsulation
+Abstraction
+Inheritance
+Polymorphism"
+What is the Dogpile effect?,"This is defined as an occurrence of an event when the cache expires and also when the websites are hit with more requests by the client at a time. This dogpile effect can be averted by the use of a semaphore lock. If in the particular system the value expires then, first of all, the particular process receives the lock and begins generating new value."
+" What are the database connections in Python Flask, explain?","Database-powered applications are supported by the flask. The relational database systems need to create a schema that requires piping the schema.sql file into an SQLite3 command. So, in this case, you need to install the SQLite3 command on your system to initiate and create the database in the flask.
+
+We can request a database using flask in three ways, and they are:
+
+before_request(): Using this we can request database before only without passing arguments.
+after_request(): This method is called after requesting the database and also send the response to the client.
+teardown_request(): This method is called in the cases where the responses are not guaranteed and the exception is raised. They have no access to modify the request."
+ How can we access sessions in flask?,"A session will basically allow us to remember information from one request to another. In a flask, a signed cookie is used to make the user look at the session contents and modify them. Moreover, the user can change the session only when the secret key named Flask.secret_key is present.
+"
+How to save an image locally using Python in which we already know the URL address?,"he following code is used to save the image locally from the URL address which we know.
+
+import urllib.request
+urllib.request.urlretrieve(""URL"", ""local-filename.jpg"")"
+List out the inheritance styles in Django?,"There are three possible inheritance styles in Django, and they are:
+
+Proxy models: This style is mainly used for those who want to modify the Python level behavior of the model, without modifying the model’s fields.
+Abstract Base Classes: This inheritance style is used only when we want to make parent class hold the data which they don’t want to repeat again in the child class.
+Multi-table Inheritance: This inheritance style is used only when we want to subclass an existing model and there must a database table designed for each model on its own."
+List the ways we add view functions to urls.py?,"Adding a function view
+Adding a class-based view"
+Why is Django loosely packed?,Django has described as a loosely coupled framework because of the MTV architecture it’s based upon. Django’s architecture means a variant of MVC architecture and also MTV is helpful because this completely separates the server code of the client’s machine.
+What is the use of manage.py?,"It is an automatically built file inside each Django project. It is a flat wrapper encompassing the Django-admin.py. It possesses the following usage:
+
+It establishes your project's package on sys.path.
+It fixes the DJANGO_SETTING_MODULE environment variable to point to your project's setting.py file."
+What is the use of Django-admin.py?,Django-admin.py is a command-line argument that is utilized for administrative tasks
